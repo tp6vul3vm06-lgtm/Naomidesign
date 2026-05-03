@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>關於我 — Designer Name</title>
+  <meta name="description" content="認識設計師 Designer Name — UI/UX 設計師、視覺創作者，專注於數位產品設計與品牌識別。">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Noto+Serif+TC:wght@400;500;600;700&family=Noto+Sans+TC:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.21/dist/lenis.css">
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/about.css">
+</head>
+<body>
+
+  <!-- 自訂游標 -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <!-- 滾動進度條 -->
+  <div class="scroll-progress"></div>
+
+  <!-- 導覽列 -->
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">
+      Designer<span class="accent">.</span>
+    </a>
+
+    <button class="menu-toggle" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="index.html" data-i18n="nav.home">首頁</a></li>
+        <li><a href="about.html" data-i18n="nav.about">關於我</a></li>
+        <li><a href="portfolio.html" data-i18n="nav.portfolio">設計</a></li>
+        <li><a href="photography.html" data-i18n="nav.photography">攝影</a></li>
+        <li><a href="illustration.html" data-i18n="nav.illustration">插畫</a></li>
+        <li><a href="contact.html" data-i18n="nav.contact">聯繫方式</a></li>
+      </ul>
+
+      <div class="lang-switch">
+        <button data-lang="zh-TW" class="active">中</button>
+        <button data-lang="en">EN</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============ 1. 頁首大標題區 ============ -->
+  <section class="about-hero">
+    <div class="about-hero-bg"></div>
+    <div class="container">
+      <div class="about-hero-content">
+        <p class="about-hero-eyebrow" data-i18n="about.hero.eyebrow">關於我</p>
+
+        <h1 class="about-hero-title">
+          <span class="title-wrapper">
+            <span class="title-line title-line-1" data-i18n="about.hero.title1">設計師姓名</span>
+          </span>
+          <span class="title-wrapper">
+            <span class="title-line title-line-2" data-i18n="about.hero.title2">一位以好奇心</span>
+          </span>
+          <span class="title-wrapper">
+            <span class="title-line title-line-3" data-i18n="about.hero.title3">驅動設計的<em>創作者</em></span>
+          </span>
+        </h1>
+
+        <p class="about-hero-tagline" data-i18n="about.hero.tagline">
+          我相信設計不只是視覺的呈現，而是解決問題、傳達情感、創造連結的橋樑。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 2. 個人故事區 ============ -->
+  <section class="story-section">
+    <div class="container">
+      <div class="story-grid">
+        <div class="story-image-wrapper reveal">
+          <img class="story-image" src="https://picsum.photos/seed/about-portrait/800/1000" alt="Designer Portrait">
+          <span class="story-image-caption" data-i18n="about.story.caption">TAIPEI · 2026</span>
+        </div>
+
+        <div class="story-content">
+          <span class="story-eyebrow reveal" data-i18n="about.story.eyebrow">個人故事</span>
+          <h2 class="story-title reveal" data-i18n="about.story.title">從插畫到<em>數位設計</em>的旅程</h2>
+
+          <div class="story-paragraphs">
+            <p class="reveal" data-i18n="about.story.p1">從小對藝術充滿熱情的我，從手繪插畫開始。</p>
+            <p class="reveal" data-i18n="about.story.p2">畢業後加入科技新創公司，正式踏入 UI/UX 領域。</p>
+            <p class="reveal" data-i18n="about.story.p3">工作之餘，我喜歡用攝影記錄旅行的瞬間。</p>
+          </div>
+
+          <blockquote class="story-quote reveal" data-i18n="about.story.quote">
+            「好的設計是看不見的，它讓使用者專注於目標，而非設計本身。」
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 3. 專業能力區（複合區塊：詳細說明 + 軟體圖示）============ -->
+  <section class="professional-section">
+    <div class="container">
+      <div class="section-header reveal" style="flex-direction: column; align-items: flex-start; margin-bottom: 3rem;">
+        <span class="section-eyebrow" data-i18n="about.pro.eyebrow">專業能力</span>
+        <h2 class="section-title" data-i18n="about.pro.title">Professional <em>Expertise</em></h2>
+        <p style="font-size: 1rem; color: var(--color-text-muted); max-width: 700px; margin-top: 1rem;" data-i18n="about.pro.tagline">
+          橫跨數位、平面、立體三個維度，整合視覺與技術，提供完整的設計解決方案。
+        </p>
+      </div>
+
+      <div class="expertise-blocks">
+
+        <!-- 專長 1：整合設計 -->
+        <div class="expertise-block reveal">
+          <div class="expertise-header">
+            <h3 class="expertise-title" data-i18n="about.pro.1.title">整合設計專長（數位 × 平面 × 立體）</h3>
+            <div class="expertise-line"></div>
+          </div>
+
+          <div class="expertise-grid">
+            <div class="expertise-item">
+              <h4 data-i18n="about.pro.1.sub1.title">UI/UX 與品牌視覺</h4>
+              <ul>
+                <li data-i18n="about.pro.1.sub1.li1">App/Web 介面規劃、使用流程與高保真原型</li>
+                <li data-i18n="about.pro.1.sub1.li2">LOGO、CIS/VI 建置，行銷素材（海報、DM、Banner、社群貼圖、活動主視覺）</li>
+                <li data-i18n="about.pro.1.sub1.li3">型錄、書籍、電子刊物等排版</li>
+              </ul>
+            </div>
+
+            <div class="expertise-item">
+              <h4 data-i18n="about.pro.1.sub2.title">立體結構與產品開發</h4>
+              <ul>
+                <li data-i18n="about.pro.1.sub2.li1">禮贈品、商品與包裝造型/結構設計</li>
+                <li data-i18n="about.pro.1.sub2.li2">展場攤位、道具 3D 建模與空間視覺提案（Rhino/SketchUp/AutoCAD）</li>
+                <li data-i18n="about.pro.1.sub2.li3">KeyShot 渲染、雷雕與 3D 列印打樣驗證</li>
+              </ul>
+            </div>
+
+            <div class="expertise-item">
+              <h4 data-i18n="about.pro.1.sub3.title">印刷與色彩管理</h4>
+              <ul>
+                <li data-i18n="about.pro.1.sub3.li1">印前檔案製作、CMYK/專色色彩校正</li>
+                <li data-i18n="about.pro.1.sub3.li2">紙材與後加工（燙金、局部光等）評估與成本控管</li>
+                <li data-i18n="about.pro.1.sub3.li3">保持螢幕、印刷色彩一致性</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="expertise-tools" data-i18n="about.pro.1.tools">
+            <strong>主要工具：</strong>Illustrator、Photoshop、Figma、Rhino、KeyShot、SketchUp、AutoCAD
+          </div>
+        </div>
+
+        <!-- 專長 2：插畫與漫畫 -->
+        <div class="expertise-block reveal">
+          <div class="expertise-header">
+            <h3 class="expertise-title" data-i18n="about.pro.2.title">插畫與漫畫創作專長</h3>
+            <div class="expertise-line"></div>
+          </div>
+
+          <div class="expertise-grid">
+            <div class="expertise-item">
+              <h4 data-i18n="about.pro.2.sub1.title">插畫風格與應用</h4>
+              <ul>
+                <li data-i18n="about.pro.2.sub1.li1">日系人物插畫、Q 版角色、主視覺/吉祥物繪製</li>
+                <li data-i18n="about.pro.2.sub1.li2">產品插圖、卡牌、貼圖、服裝與場景設計</li>
+              </ul>
+            </div>
+
+            <div class="expertise-item">
+              <h4 data-i18n="about.pro.2.sub2.title">漫畫敘事</h4>
+              <ul>
+                <li data-i18n="about.pro.2.sub2.li1">黑白/全彩分鏡、劇情節奏與故事表現</li>
+                <li data-i18n="about.pro.2.sub2.li2">短篇漫畫至完整連載皆可獨立執行</li>
+              </ul>
+            </div>
+
+            <div class="expertise-item">
+              <h4 data-i18n="about.pro.2.sub3.title">排版與整合</h4>
+              <ul>
+                <li data-i18n="about.pro.2.sub3.li1">插畫與文字排版、跨媒介視覺統整</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="expertise-tools" data-i18n="about.pro.2.tools">
+            <strong>主要工具：</strong>Clip Studio Paint、Photoshop
+          </div>
+        </div>
+
+        <!-- 專長 3：攝影與影音 -->
+        <div class="expertise-block reveal">
+          <div class="expertise-header">
+            <h3 class="expertise-title" data-i18n="about.pro.3.title">攝影與影音製作專長</h3>
+            <div class="expertise-line"></div>
+          </div>
+
+          <div class="expertise-grid">
+            <div class="expertise-item">
+              <h4 data-i18n="about.pro.3.sub1.title">攝影項目</h4>
+              <ul>
+                <li data-i18n="about.pro.3.sub1.li1">人像、商品、活動/婚禮紀錄，形象及宣傳拍攝</li>
+              </ul>
+            </div>
+
+            <div class="expertise-item">
+              <h4 data-i18n="about.pro.3.sub2.title">影片企劃與製作</h4>
+              <ul>
+                <li data-i18n="about.pro.3.sub2.li1">動態攝影：外/內景節目、街專訪、訪談</li>
+                <li data-i18n="about.pro.3.sub2.li2">長短影音企劃、剪輯、調光與基礎特效</li>
+                <li data-i18n="about.pro.3.sub2.li3">形象影片、產品廣告、社群 Reels/短影音</li>
+                <li data-i18n="about.pro.3.sub2.li4">快剪、情感類型成果展現</li>
+              </ul>
+            </div>
+
+            <div class="expertise-item">
+              <h4 data-i18n="about.pro.3.sub3.title">現場與後製</h4>
+              <ul>
+                <li data-i18n="about.pro.3.sub3.li1">拍攝腳本撰寫、燈光與器材運用，素材管理與版本交付</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="expertise-tools" data-i18n="about.pro.3.tools">
+            <strong>主要工具/設備：</strong>DaVinci Resolve、剪映、Sony α 系列相機
+          </div>
+        </div>
+      </div>
+
+      <!-- 軟體圖示子區塊 -->
+      <div class="software-section">
+        <div class="reveal" style="margin-bottom: 2.5rem;">
+          <span class="software-section-eyebrow" data-i18n="about.software.eyebrow">常用軟體</span>
+          <h3 class="software-section-title" data-i18n="about.software.title">My <em>Toolkit</em></h3>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Figma -->
+          <div class="skill-card reveal">
+            <span class="skill-level">Expert</span>
+            <div class="skill-icon">
+              <svg viewBox="0 0 38 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19 28.5C19 25.9804 20.0009 23.5641 21.7825 21.7825C23.5641 20.0009 25.9804 19 28.5 19C31.0196 19 33.4359 20.0009 35.2175 21.7825C36.9991 23.5641 38 25.9804 38 28.5C38 31.0196 36.9991 33.4359 35.2175 35.2175C33.4359 36.9991 31.0196 38 28.5 38C25.9804 38 23.5641 36.9991 21.7825 35.2175C20.0009 33.4359 19 31.0196 19 28.5Z" fill="#1ABCFE"/>
+                <path d="M0 47.5C0 44.9804 1.00089 42.5641 2.78249 40.7825C4.56408 39.0009 6.98044 38 9.5 38H19V47.5C19 50.0196 17.9991 52.4359 16.2175 54.2175C14.4359 55.9991 12.0196 57 9.5 57C6.98044 57 4.56408 55.9991 2.78249 54.2175C1.00089 52.4359 0 50.0196 0 47.5Z" fill="#0ACF83"/>
+                <path d="M19 0V19H28.5C31.0196 19 33.4359 17.9991 35.2175 16.2175C36.9991 14.4359 38 12.0196 38 9.5C38 6.98044 36.9991 4.56408 35.2175 2.78249C33.4359 1.00089 31.0196 0 28.5 0H19Z" fill="#FF7262"/>
+                <path d="M0 9.5C0 12.0196 1.00089 14.4359 2.78249 16.2175C4.56408 17.9991 6.98044 19 9.5 19H19V0H9.5C6.98044 0 4.56408 1.00089 2.78249 2.78249C1.00089 4.56408 0 6.98044 0 9.5Z" fill="#F24E1E"/>
+                <path d="M0 28.5C0 31.0196 1.00089 33.4359 2.78249 35.2175C4.56408 36.9991 6.98044 38 9.5 38H19V19H9.5C6.98044 19 4.56408 20.0009 2.78249 21.7825C1.00089 23.5641 0 25.9804 0 28.5Z" fill="#A259FF"/>
+              </svg>
+            </div>
+            <span class="skill-name">Figma</span>
+          </div>
+
+          <div class="skill-card reveal">
+            <span class="skill-level">Expert</span>
+            <div class="skill-icon">
+              <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                <rect width="64" height="64" rx="10" fill="#001E36"/>
+                <path d="M14 17h11.6c5.7 0 9 3.3 9 8.5 0 5.6-4 8.7-9.5 8.7H20V47h-6V17zm6 12.4h4.8c2.6 0 4-1.5 4-3.9 0-2.5-1.4-3.9-4-3.9H20v7.8z" fill="#31A8FF"/>
+                <path d="M37 32.6c0-5.7 3.5-9.4 9.5-9.4 2 0 3.7.4 5 .9v4.5c-1.4-.6-2.7-1-4.4-1-3.4 0-5 2-5 5s1.6 4.9 5 4.9c1.7 0 3-.4 4.4-1v4.4c-1.3.6-3 1-5 1-6 0-9.5-3.7-9.5-9.3z" fill="#31A8FF"/>
+              </svg>
+            </div>
+            <span class="skill-name">Photoshop</span>
+          </div>
+
+          <div class="skill-card reveal">
+            <span class="skill-level">Advanced</span>
+            <div class="skill-icon">
+              <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                <rect width="64" height="64" rx="10" fill="#330000"/>
+                <path d="M27 36h-7l-1.5 5h-5l8-25h6l8 25h-7L27 36zm-1.3-4.6L23.5 24l-2.2 7.4h4.4z" fill="#FF9A00"/>
+                <path d="M42 22a3 3 0 100-6 3 3 0 000 6zm-3 3h6v16h-6V25z" fill="#FF9A00"/>
+              </svg>
+            </div>
+            <span class="skill-name">Illustrator</span>
+          </div>
+
+          <div class="skill-card reveal">
+            <span class="skill-level">Advanced</span>
+            <div class="skill-icon">
+              <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                <rect width="64" height="64" rx="10" fill="#fff"/>
+                <path d="M14 16.5l3.5-2.5 31 2.3v33.7c0 2-1 3-3.7 3.2L18 55c-2 .2-3.5-.7-4.5-2L10 47.5V18l4-1.5z" fill="#000"/>
+                <path d="M48.5 16.3L17.5 14c-1.5-.1-1.8.5-1.2 1l3 2.7c.9.7 2 1 3.5 1l28.5-1.7c.6 0 .2-.6-.5-.7zm-2 5l-29.7 1.4c-1.4 0-1.6.7-1.6 1.5v25.7c0 .8.4 1.4 1.6 1.3l25.7-1.5c1-.1 1.6-.5 1.6-1.5V22.5c0-.8-.3-1.2-.6-1.2z" fill="#fff"/>
+                <path d="M40 27c.1.6 0 1.2-.6 1.3l-1.4.3v20.3c-1.2.6-2.3 1-3.3 1-1.6 0-2-.5-3.2-2L22 33.6V47l2.7.6s0 1.5-2.1 1.5l-5.7.3c-.2-.3 0-1.2.5-1.4l1.4-.4V29.5l-2-.2c-.2-.6.2-1.5 1.1-1.6l6.2-.4 9 13.8V28.7l-2.3-.3c-.2-.7.4-1.2 1-1.3l5.7-.3z" fill="#000"/>
+              </svg>
+            </div>
+            <span class="skill-name">Notion</span>
+          </div>
+
+          <div class="skill-card reveal">
+            <span class="skill-level">Advanced</span>
+            <div class="skill-icon">
+              <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                <rect width="64" height="64" rx="10" fill="#1A1A1A"/>
+                <text x="32" y="42" text-anchor="middle" fill="#fff" font-size="20" font-family="sans-serif" font-weight="bold">Rhino</text>
+              </svg>
+            </div>
+            <span class="skill-name">Rhino</span>
+          </div>
+
+          <div class="skill-card reveal">
+            <span class="skill-level">Advanced</span>
+            <div class="skill-icon">
+              <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                <rect width="64" height="64" rx="10" fill="#FFD500"/>
+                <path d="M16 44V20l8 8 8-8v24h-6V32l-2 2-2-2v12h-6zm22 0V20h12v6h-6v3h5v6h-5v3h6v6H38z" fill="#000"/>
+              </svg>
+            </div>
+            <span class="skill-name">KeyShot</span>
+          </div>
+
+          <div class="skill-card reveal">
+            <span class="skill-level">Advanced</span>
+            <div class="skill-icon">
+              <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                <rect width="64" height="64" rx="10" fill="#0096D6"/>
+                <path d="M16 16h6v22h10v6H16V16zm22 0h6v18l-4 4v6h-12v-6l4-4V16h6z" fill="#fff"/>
+              </svg>
+            </div>
+            <span class="skill-name">DaVinci Resolve</span>
+          </div>
+
+          <div class="skill-card reveal">
+            <span class="skill-level">Expert</span>
+            <div class="skill-icon">
+              <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                <rect width="64" height="64" rx="10" fill="#1A1A1A"/>
+                <path d="M20 14h6l8 16V14h6v36h-6l-8-16v16h-6V14z" fill="#00C8FF"/>
+              </svg>
+            </div>
+            <span class="skill-name">Clip Studio</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 4. 經歷時間軸（倒序：資深→學歷） ============ -->
+  <section class="experience-section">
+    <div class="container">
+      <div class="section-header reveal" style="flex-direction: column; align-items: flex-start; max-width: 900px; margin-left: auto; margin-right: auto;">
+        <span class="section-eyebrow" data-i18n="about.exp.eyebrow">工作經歷</span>
+        <h2 class="section-title" data-i18n="about.exp.title">我走過的<em>每一步</em></h2>
+      </div>
+
+      <div class="timeline">
+        <!-- 第 1 個（最資深，最強）-->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-period" data-i18n="about.exp.1.period">2024 — 現在</div>
+          <h3 class="timeline-role" data-i18n="about.exp.1.role">資深 UI/UX 設計師</h3>
+          <div class="timeline-company">
+            <span class="dot"></span>
+            <span data-i18n="about.exp.1.company">Tech Studio Inc.</span>
+          </div>
+          <p class="timeline-description" data-i18n="about.exp.1.desc">
+            主導 SaaS 產品設計團隊，建立完整設計系統並提升使用者轉換率達 35%。
+          </p>
+          <div class="timeline-tags">
+            <span class="timeline-tag">Design System</span>
+            <span class="timeline-tag">SaaS</span>
+            <span class="timeline-tag">Team Leadership</span>
+          </div>
+        </div>
+
+        <!-- 第 2 個（中等）-->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-period" data-i18n="about.exp.2.period">2022 — 2024</div>
+          <h3 class="timeline-role" data-i18n="about.exp.2.role">UI/UX 設計師</h3>
+          <div class="timeline-company">
+            <span class="dot"></span>
+            <span data-i18n="about.exp.2.company">Creative Agency</span>
+          </div>
+          <p class="timeline-description" data-i18n="about.exp.2.desc">
+            為超過 15 個品牌提供完整的數位產品設計服務。
+          </p>
+          <div class="timeline-tags">
+            <span class="timeline-tag">Branding</span>
+            <span class="timeline-tag">E-commerce</span>
+            <span class="timeline-tag">FinTech</span>
+          </div>
+        </div>
+
+        <!-- 第 3 個（較弱）-->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-period" data-i18n="about.exp.3.period">2021 — 2022</div>
+          <h3 class="timeline-role" data-i18n="about.exp.3.role">初階產品設計師</h3>
+          <div class="timeline-company">
+            <span class="dot"></span>
+            <span data-i18n="about.exp.3.company">Startup Hub</span>
+          </div>
+          <p class="timeline-description" data-i18n="about.exp.3.desc">
+            參與新創團隊的 MVP 設計。
+          </p>
+          <div class="timeline-tags">
+            <span class="timeline-tag">User Research</span>
+            <span class="timeline-tag">Prototyping</span>
+            <span class="timeline-tag">MVP</span>
+          </div>
+        </div>
+
+        <!-- 第 4 個（學歷，最弱）-->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-period" data-i18n="about.exp.4.period">2020 — 2021</div>
+          <h3 class="timeline-role" data-i18n="about.exp.4.role">視覺傳達設計學士</h3>
+          <div class="timeline-company">
+            <span class="dot"></span>
+            <span data-i18n="about.exp.4.company">國立 OO 大學</span>
+          </div>
+          <p class="timeline-description" data-i18n="about.exp.4.desc">
+            主修視覺傳達設計，副修認知心理學。
+          </p>
+          <div class="timeline-tags">
+            <span class="timeline-tag">Education</span>
+            <span class="timeline-tag">Accessibility</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 5. 作品清單區（三大類別）============ -->
+  <section class="works-list-section">
+    <div class="container">
+      <div class="section-header reveal" style="flex-direction: column; align-items: flex-start; margin-bottom: 3rem;">
+        <span class="section-eyebrow" data-i18n="about.works.eyebrow">作品清單</span>
+        <h2 class="section-title" data-i18n="about.works.title">Selected <em>Works</em></h2>
+        <p style="font-size: 1rem; color: var(--color-text-muted); max-width: 600px; margin-top: 1rem;" data-i18n="about.works.tagline">
+          橫跨插畫、設計、攝影三個領域的代表性作品。
+        </p>
+      </div>
+
+      <!-- 插畫類 -->
+      <div class="works-list-block">
+        <div class="works-list-header">
+          <span class="works-list-category" data-i18n="about.works.illustration">ILLUSTRATION</span>
+          <div class="works-list-line"></div>
+        </div>
+
+        <div class="works-list-grid">
+          <div class="works-list-item"><span class="work-name">《魅影之戀》</span><span class="work-meta">封面繪製 — 艾雅著</span></div>
+          <div class="works-list-item"><span class="work-name">《造神傳說_第一期聖使營救計畫》</span><span class="work-meta">同人誌</span></div>
+          <div class="works-list-item"><span class="work-name">《天與空》</span><span class="work-meta">封面繪製 — 艾雅著</span></div>
+          <div class="works-list-item"><span class="work-name">《聖騎士的守則》</span><span class="work-meta">連載</span></div>
+          <div class="works-list-item"><span class="work-name">《晴時多雲霧迷離》</span><span class="work-meta">封面繪製 — 嚴若璩著</span></div>
+          <div class="works-list-item"><span class="work-name">《我的轉生怎麼跟小說裡寫的不一樣啊？！》</span><span class="work-meta">封面繪製 — 一條妤著</span></div>
+          <div class="works-list-item"><span class="work-name">《神魔畫冊》</span><span class="work-meta">同人誌</span></div>
+          <div class="works-list-item"><span class="work-name">《SSS級噬魔者管家與魔界公主》</span><span class="work-meta">封面繪製 — 少帥著</span></div>
+          <div class="works-list-item"><span class="work-name">《Aphur》</span><span class="work-meta">獨立遊戲角色設計及主視覺</span></div>
+          <div class="works-list-item"><span class="work-name">《想成為一流主神的創世神之子》</span><span class="work-meta">封面繪製 — 少帥著</span></div>
+          <div class="works-list-item"><span class="work-name">《deemo 白雪公主》</span><span class="work-meta">同人誌</span></div>
+          <div class="works-list-item"><span class="work-name">《烈焰奇譚01 魔書的傳說》</span><span class="work-meta">封面繪製設計 — 天翔著</span></div>
+          <div class="works-list-item"><span class="work-name">《遙途 vol.1》</span><span class="work-meta">封面繪製 — 艾雅著</span></div>
+          <div class="works-list-item"><span class="work-name">《離島》</span><span class="work-meta">2020 漫畫繁星結業作品</span></div>
+          <div class="works-list-item"><span class="work-name">《MemoryFancy 記憶幻想》</span><span class="work-meta">遊戲設計</span></div>
+          <div class="works-list-item"><span class="work-name">《傲驕大小姐與貼身侍衛》</span><span class="work-meta">同人誌</span></div>
+          <div class="works-list-item"><span class="work-name">《遙途 vol.2》</span><span class="work-meta">封面繪製 — 艾雅著</span></div>
+          <div class="works-list-item"><span class="work-name">《金華街殺警事件》</span><span class="work-meta">比賽作品</span></div>
+          <div class="works-list-item"><span class="work-name">《神錘持有者》</span><span class="work-meta">封面繪製 — 艾雅著</span></div>
+          <div class="works-list-item"><span class="work-name">《心情不好?進來坐坐吧!》</span><span class="work-meta">封面繪製設計 — 綠茶無糖微冰著</span></div>
+          <div class="works-list-item"><span class="work-name">《屠龍者與女武神》</span><span class="work-meta">封面繪製 — 艾雅著</span></div>
+          <div class="works-list-item"><span class="work-name">《願如北辰般》</span><span class="work-meta">連載</span></div>
+          <div class="works-list-item"><span class="work-name">《Legend of Creation 造神傳說》</span><span class="work-meta">連載</span></div>
+        </div>
+      </div>
+
+      <!-- 設計類 -->
+      <div class="works-list-block">
+        <div class="works-list-header">
+          <span class="works-list-category" data-i18n="about.works.design">DESIGN</span>
+          <div class="works-list-line"></div>
+        </div>
+
+        <div class="works-list-grid">
+          <div class="works-list-item"><span class="work-name">108 年淡水南瓜節</span><span class="work-meta">造景設計｜繪製｜製作</span></div>
+          <div class="works-list-item"><span class="work-name">民眾診聊所 LOGO</span><span class="work-meta">影音相關延伸設計</span></div>
+          <div class="works-list-item"><span class="work-name">野訊國際 LOGO</span><span class="work-meta">插畫｜漫畫合作</span></div>
+          <div class="works-list-item"><span class="work-name">眾議院 LOGO</span><span class="work-meta">影音相關延伸設計</span></div>
+          <div class="works-list-item"><span class="work-name">NINKA NFT</span><span class="work-meta">插畫設計</span></div>
+          <div class="works-list-item"><span class="work-name">新生國小 60 周年校慶</span><span class="work-meta">主視覺｜延伸物｜設計提案</span></div>
+          <div class="works-list-item"><span class="work-name">Vtuber Live 2D</span><span class="work-meta">V 皮繪製</span></div>
+          <div class="works-list-item"><span class="work-name">3490 24-25 年度 People of Action</span><span class="work-meta">海報設計</span></div>
+          <div class="works-list-item"><span class="work-name">海波兒童劇團 LOGO</span><span class="work-meta">CIS 設計</span></div>
+          <div class="works-list-item"><span class="work-name">中華民國童軍第 12 次全國大露營 LOGO</span><span class="work-meta">延伸物｜設計提案</span></div>
+          <div class="works-list-item"><span class="work-name">勁偉 SDB IF 設計專業組</span><span class="work-meta">表板平面設計</span></div>
+          <div class="works-list-item"><span class="work-name">EGGPOP NFT</span><span class="work-meta">設計｜插畫</span></div>
+          <div class="works-list-item"><span class="work-name">眾青雲集造浪營</span><span class="work-meta">主視覺｜系列活動視覺｜延伸物｜設計</span></div>
+          <div class="works-list-item"><span class="work-name">Cryptoldyou Website UIUX</span><span class="work-meta">設計｜建置</span></div>
+          <div class="works-list-item"><span class="work-name">眾青論壇</span><span class="work-meta">系列活動視覺｜延伸物｜設計</span></div>
+          <div class="works-list-item"><span class="work-name">EGGPOP Website & Search web UIUX</span><span class="work-meta">設計｜建置</span></div>
+        </div>
+      </div>
+
+      <!-- 攝影類 -->
+      <div class="works-list-block">
+        <div class="works-list-header">
+          <span class="works-list-category" data-i18n="about.works.photo">PHOTO & VIDEOGRAPHY</span>
+          <div class="works-list-line"></div>
+        </div>
+
+        <div class="works-list-grid">
+          <div class="works-list-item"><span class="work-name">台科大數位學習與教育研究所</span><span class="work-meta">影片製作合作</span></div>
+          <div class="works-list-item"><span class="work-name">板橋群英 x 喜樂小田田</span><span class="work-meta">公益活動 活動攝影</span></div>
+          <div class="works-list-item"><span class="work-name">王子娘學府</span><span class="work-meta">短影音剪輯</span></div>
+          <div class="works-list-item"><span class="work-name">桃園淨零生活節</span><span class="work-meta">活動攝影</span></div>
+          <div class="works-list-item"><span class="work-name">基隆市警察局反詐宣導</span><span class="work-meta">影片拍攝｜剪輯</span></div>
+          <div class="works-list-item"><span class="work-name">新店區 113 年度模範父親表揚典禮</span><span class="work-meta">活動攝影</span></div>
+          <div class="works-list-item"><span class="work-name">3490 扶少領袖營</span><span class="work-meta">影片拍攝｜剪輯</span></div>
+          <div class="works-list-item"><span class="work-name">新店區 113 年度模範母親表揚典禮</span><span class="work-meta">活動攝影</span></div>
+          <div class="works-list-item"><span class="work-name">民眾診聊所</span><span class="work-meta">影片拍攝｜剪輯</span></div>
+          <div class="works-list-item"><span class="work-name">永佳捷 x 林書豪 廣告 CF 上線記者會</span><span class="work-meta">平面攝影</span></div>
+          <div class="works-list-item"><span class="work-name">眾議院</span><span class="work-meta">影片拍攝｜剪輯</span></div>
+          <div class="works-list-item"><span class="work-name">永佳捷記者會</span><span class="work-meta">平面攝影</span></div>
+          <div class="works-list-item"><span class="work-name">青年培力暨創業構想競賽</span><span class="work-meta">活動攝影</span></div>
+          <div class="works-list-item"><span class="work-name">午宴</span><span class="work-meta">動態攝影</span></div>
+          <div class="works-list-item"><span class="work-name">板橋群英扶輪社 23-24 授證</span><span class="work-meta">攝影</span></div>
+          <div class="works-list-item"><span class="work-name">板橋群英扶輪社 24-25 授證</span><span class="work-meta">攝影</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 6. CTA 區 ============ -->
+  <section class="about-cta">
+    <div class="container">
+      <h2 class="about-cta-text reveal" data-i18n="about.cta.text">想了解更多<em>合作可能</em>嗎？</h2>
+      <div class="magnetic reveal">
+        <a href="contact.html" class="contact-cta-button magnetic-inner">
+          <span data-i18n="about.cta.btn">聯繫我</span>
+          <span class="arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 頁尾 -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h3 data-i18n="footer.brand">設計師姓名</h3>
+          <p data-i18n="footer.tagline">UI/UX 設計師、視覺創作者，專注於打造令人記憶深刻的數位體驗。</p>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-i18n="footer.col1.title">導覽</h4>
+          <ul>
+            <li><a href="index.html" data-i18n="nav.home">首頁</a></li>
+            <li><a href="about.html" data-i18n="nav.about">關於我</a></li>
+            <li><a href="portfolio.html" data-i18n="nav.portfolio">設計</a></li>
+            <li><a href="photography.html" data-i18n="nav.photography">攝影</a></li>
+            <li><a href="illustration.html" data-i18n="nav.illustration">插畫</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-i18n="footer.col2.title">聯絡</h4>
+          <ul>
+            <li><a href="mailto:hello@example.com">hello@example.com</a></li>
+            <li><a href="#" target="_blank">Instagram</a></li>
+            <li><a href="#" target="_blank">Behance</a></li>
+            <li><a href="#" target="_blank">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span data-i18n="footer.copyright">© 2026 設計師姓名. 版權所有。</span>
+        <span data-i18n="footer.location">Made in Taipei</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/lenis@1.3.21/dist/lenis.min.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/about.js"></script>
+</body>
+</html>

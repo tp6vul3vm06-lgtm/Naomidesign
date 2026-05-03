@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Designer Name — UI/UX Designer Portfolio</title>
+  <meta name="description" content="UI/UX 設計師個人作品集，專注於數位產品設計、品牌識別與視覺敘事。">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600;700&family=Noto+Serif+TC:wght@400;500;600;700&family=Noto+Sans+TC:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Lenis 平滑滾動函式庫 CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.21/dist/lenis.css">
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+
+  <!-- ============ 自訂游標 ============ -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <!-- ============ 滾動進度條 ============ -->
+  <div class="scroll-progress"></div>
+
+  <!-- ============ 導覽列 ============ -->
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">
+      Designer<span class="accent">.</span>
+    </a>
+
+    <button class="menu-toggle" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="index.html" data-i18n="nav.home">首頁</a></li>
+        <li><a href="about.html" data-i18n="nav.about">關於我</a></li>
+        <li><a href="portfolio.html" data-i18n="nav.portfolio">設計</a></li>
+        <li><a href="photography.html" data-i18n="nav.photography">攝影</a></li>
+        <li><a href="illustration.html" data-i18n="nav.illustration">插畫</a></li>
+        <li><a href="contact.html" data-i18n="nav.contact">聯繫方式</a></li>
+      </ul>
+
+      <div class="lang-switch">
+        <button data-lang="zh-TW" class="active">中</button>
+        <button data-lang="en">EN</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============ 1. 英雄區塊 ============ -->
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="glow" id="glow"></div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow" data-i18n="hero.eyebrow">UI / UX 設計師</p>
+
+      <h1>
+        <span class="title-wrapper">
+          <span class="title" data-i18n="hero.title1">以設計</span>
+        </span>
+        <span class="title-wrapper">
+          <span class="title title-line-2" data-i18n="hero.title2">驅動<em>創新</em></span>
+        </span>
+      </h1>
+
+      <p class="hero-tagline" data-i18n="hero.tagline">
+        專注於使用者經驗與視覺美學的平衡，打造令人印象深刻的數位體驗。
+      </p>
+
+      <div class="magnetic">
+        <a href="portfolio.html" class="hero-cta magnetic-inner">
+          <span data-i18n="hero.cta">探索作品</span>
+          <span class="arrow">→</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <span data-i18n="hero.scroll">向下捲動</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ============ 2. 關於我簡介區 ============ -->
+  <section class="section" id="about-preview">
+    <div class="container">
+      <div class="about-preview">
+        <div class="about-image reveal">
+          <img src="https://picsum.photos/seed/designer/800/1000" alt="Designer Portrait">
+        </div>
+
+        <div class="about-text reveal">
+          <span class="section-eyebrow" data-i18n="about.eyebrow">關於設計師</span>
+          <h2 data-i18n="about.title">我是<em>設計師姓名</em>，相信好設計能改變世界</h2>
+          <p data-i18n="about.p1">擁有五年以上的 UI/UX 設計經驗，專精於品牌識別、數位產品設計與視覺敘事。</p>
+          <p data-i18n="about.p2">我的設計理念是讓複雜的事情變簡單，讓平凡的事物變得不凡。</p>
+
+          <div class="about-skills">
+            <span class="skill-tag">UI Design</span>
+            <span class="skill-tag">UX Research</span>
+            <span class="skill-tag">Branding</span>
+            <span class="skill-tag">Figma</span>
+            <span class="skill-tag">Prototyping</span>
+            <span class="skill-tag">Design System</span>
+          </div>
+
+          <a href="about.html" class="section-link" style="margin-top: 2.5rem;">
+            <span data-i18n="about.cta">更認識我</span>
+            <span class="arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 3. 精選作品區 ============ -->
+  <section class="section" id="works">
+    <div class="container">
+      <div class="section-header reveal">
+        <div>
+          <span class="section-eyebrow" data-i18n="works.eyebrow">精選作品</span>
+          <h2 class="section-title" data-i18n="works.title">近期<em>專案</em></h2>
+        </div>
+        <a href="portfolio.html" class="section-link">
+          <span data-i18n="works.link">查看全部作品</span>
+          <span class="arrow">→</span>
+        </a>
+      </div>
+
+      <div class="works-grid">
+        <a href="portfolio.html" class="work-card reveal">
+          <div class="work-card-image" style="background-image: url('https://picsum.photos/seed/work1/1600/700');"></div>
+          <div class="work-card-overlay"></div>
+          <div class="work-card-content">
+            <span class="work-card-category" data-i18n="works.1.category">品牌設計</span>
+            <h3 class="work-card-title" data-i18n="works.1.title">設計作品 A — 品牌識別系統</h3>
+          </div>
+        </a>
+
+        <a href="portfolio.html" class="work-card reveal">
+          <div class="work-card-image" style="background-image: url('https://picsum.photos/seed/work2/800/600');"></div>
+          <div class="work-card-overlay"></div>
+          <div class="work-card-content">
+            <span class="work-card-category" data-i18n="works.2.category">UI / UX</span>
+            <h3 class="work-card-title" data-i18n="works.2.title">設計作品 B — 行動應用程式</h3>
+          </div>
+        </a>
+
+        <a href="portfolio.html" class="work-card reveal">
+          <div class="work-card-image" style="background-image: url('https://picsum.photos/seed/work3/800/600');"></div>
+          <div class="work-card-overlay"></div>
+          <div class="work-card-content">
+            <span class="work-card-category" data-i18n="works.3.category">活動設計</span>
+            <h3 class="work-card-title" data-i18n="works.3.title">設計作品 C — 展覽視覺</h3>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 4. 聯繫我區塊 ============ -->
+  <section class="section" id="contact-cta">
+    <div class="container">
+      <div class="contact-cta">
+        <span class="contact-cta-eyebrow reveal" data-i18n="contact.eyebrow">一起合作</span>
+        <h2 class="contact-cta-title reveal" data-i18n="contact.title">有想法？<em>聊聊吧</em></h2>
+        <p class="contact-cta-text reveal" data-i18n="contact.text">
+          不論是商業合作、專案邀約或單純交流，都歡迎透過下方按鈕與我聯繫。
+        </p>
+
+        <div class="magnetic reveal">
+          <a href="contact.html" class="contact-cta-button magnetic-inner">
+            <span data-i18n="contact.cta">聯繫我</span>
+            <span class="arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 5. 頁尾 ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h3 data-i18n="footer.brand">設計師姓名</h3>
+          <p data-i18n="footer.tagline">UI/UX 設計師、視覺創作者，專注於打造令人記憶深刻的數位體驗。</p>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-i18n="footer.col1.title">導覽</h4>
+          <ul>
+            <li><a href="index.html" data-i18n="nav.home">首頁</a></li>
+            <li><a href="about.html" data-i18n="nav.about">關於我</a></li>
+            <li><a href="portfolio.html" data-i18n="nav.portfolio">設計</a></li>
+            <li><a href="photography.html" data-i18n="nav.photography">攝影</a></li>
+            <li><a href="illustration.html" data-i18n="nav.illustration">插畫</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-i18n="footer.col2.title">聯絡</h4>
+          <ul>
+            <li><a href="mailto:hello@example.com">hello@example.com</a></li>
+            <li><a href="#" target="_blank">Instagram</a></li>
+            <li><a href="#" target="_blank">Behance</a></li>
+            <li><a href="#" target="_blank">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span data-i18n="footer.copyright">© 2026 設計師姓名. 版權所有。</span>
+        <span data-i18n="footer.location">Made in Taipei</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lenis 平滑滾動函式庫 -->
+  <script src="https://unpkg.com/lenis@1.3.21/dist/lenis.min.js"></script>
+
+  <script src="js/common.js"></script>
+  <script src="js/hero.js"></script>
+</body>
+</html>
