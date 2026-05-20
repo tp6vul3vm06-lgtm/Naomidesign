@@ -9,16 +9,16 @@ const translations = {
     'nav.contact': '聯繫方式',
 
     'hero.eyebrow': 'UI / UX 設計師',
-    'hero.title1': '以設計',
-    'hero.title2': '驅動<em>創新</em>',
-    'hero.tagline': '專注於使用者經驗與視覺美學的平衡，打造令人印象深刻的數位體驗。',
+    'hero.title1': '用設計',
+    'hero.title2': '<em>編織情感</em>',
+    'hero.tagline': '專注於使用者經驗與視覺美學的平衡<br>在理性與感性之間打造令人停下腳步的設計',
     'hero.cta': '探索作品',
     'hero.scroll': '向下捲動',
 
     'about.eyebrow': '關於設計師',
-    'about.title': '我是<em>設計師姓名</em>，相信好設計能改變世界',
-    'about.p1': '擁有五年以上的 UI/UX 設計經驗，專精於品牌識別、數位產品設計與視覺敘事。',
-    'about.p2': '我的設計理念是讓複雜的事情變簡單，讓平凡的事物變得不凡。',
+    'about.title': '我是 <em>Naomi</em>，相信好設計能讓人停下腳步',
+    'about.p1': '擁有跨領域設計經驗，專精於 UI/UX、品牌識別、插畫敘事與遊戲美術',
+    'about.p2': '我的設計理念是用系統性思維，在商業邏輯與使用者情感之間取得平衡',
     'about.cta': '更認識我',
 
     'works.eyebrow': '精選作品',
@@ -33,35 +33,35 @@ const translations = {
 
     'contact.eyebrow': '一起合作',
     'contact.title': '有想法？<em>聊聊吧</em>',
-    'contact.text': '不論是商業合作、專案邀約或單純交流，都歡迎透過下方按鈕與我聯繫。',
+    'contact.text': '不論是商業合作、專案邀約或單純交流，都歡迎透過下方按鈕與我聯繫',
     'contact.cta': '聯繫我',
 
-    'footer.brand': '設計師姓名',
-    'footer.tagline': 'UI/UX 設計師、視覺創作者，專注於打造令人記憶深刻的數位體驗。',
+    'footer.brand': 'Naomi',
+    'footer.tagline': '用設計編織情感的設計師。橫跨 UI/UX、品牌、插畫、攝影與遊戲美術的多元創作者',
     'footer.col1.title': '導覽',
     'footer.col2.title': '聯絡',
-    'footer.copyright': '© 2026 設計師姓名. 版權所有。',
+    'footer.copyright': '© 2026 Naomi. 版權所有',
     'footer.location': 'Made in Taipei',
 
     // 關於我頁面
     'about.hero.eyebrow': '關於我',
-    'about.hero.title1': '設計師姓名',
-    'about.hero.title2': '一位以好奇心',
-    'about.hero.title3': '驅動設計的<em>創作者</em>',
-    'about.hero.tagline': '我相信設計不只是視覺的呈現，而是解決問題、傳達情感、創造連結的橋樑。',
+    'about.hero.title1': 'Naomi',
+    'about.hero.title2': '用設計編織',
+    'about.hero.title3': '<em>情感</em>的設計師',
+    'about.hero.tagline': '設計是視覺的呈現<br>更是解決問題、傳達情感、創造連結的橋樑',
 
     'about.story.eyebrow': '個人故事',
-    'about.story.title': '從插畫到<em>數位設計</em>的旅程',
-    'about.story.p1': '從小對藝術充滿熱情的我，從手繪插畫開始，逐步走向了平面設計與品牌識別的領域。在大學主修視覺傳達設計期間，我發現自己對於「使用者如何與產品互動」這件事特別著迷。',
-    'about.story.p2': '畢業後加入科技新創公司，正式踏入 UI/UX 領域。我學會了如何將美學與功能性結合，如何用設計解決真實的問題。五年來，我參與了超過 30 個專案，從新創品牌設計、SaaS 產品介面到大型企業的數位轉型。',
-    'about.story.p3': '工作之餘，我喜歡用攝影記錄旅行的瞬間，用插畫表達內心的世界。這些創作不只是興趣，更是滋養我設計靈感的源泉。',
-    'about.story.quote': '「好的設計是看不見的，它讓使用者專注於目標，而非設計本身。」',
+    'about.story.title': '在<em>理性與感性</em>之間說故事',
+    'about.story.p1': '對我來說，設計從來不只是視覺問題，而是「如何讓陌生人在第一秒就理解、第二秒就被打動」的細膩工程。從 UI/UX、遊戲美術到插畫敘事，我喜歡用不同的形式去探索同一個命題：人為什麼會對某個畫面停下來？',
+    'about.story.p2': '過去幾年，我從零到一打造過數位產品、品牌識別、遊戲內容與商業合作專案。這些經驗讓我深刻體會：好的設計需要設計系統的嚴謹，也需要對情感的敏銳——兩者缺一不可',
+    'about.story.p3': '我相信最好的設計，是讓使用者在不察覺技術存在的同時，被故事與情感打動。這也是我每次拿起筆、打開 Figma 時，最想傳遞的事',
+    'about.story.quote': '「設計的真正力量，不在於被看見，而在於被感受。」',
     'about.story.caption': 'TAIPEI · 2026',
 
     // 專業能力區
     'about.pro.eyebrow': '專業能力',
     'about.pro.title': 'Professional <em>Expertise</em>',
-    'about.pro.tagline': '橫跨數位、平面、立體三個維度，整合視覺與技術，提供完整的設計解決方案。',
+    'about.pro.tagline': '橫跨數位、平面、立體三個維度，整合視覺與技術，提供完整的設計解決方案',
 
     'about.pro.1.title': '整合設計專長（數位 × 平面 × 立體）',
     'about.pro.1.sub1.title': 'UI/UX 與品牌視覺',
@@ -109,30 +109,35 @@ const translations = {
     'about.exp.eyebrow': '工作經歷',
     'about.exp.title': '我走過的<em>每一步</em>',
 
-    'about.exp.1.period': '2024 — 現在',
-    'about.exp.1.role': '資深 UI/UX 設計師',
-    'about.exp.1.company': 'Tech Studio Inc.',
-    'about.exp.1.desc': '主導 SaaS 產品設計團隊，建立完整設計系統並提升使用者轉換率達 35%。負責跨部門設計策略規劃，與工程、產品團隊密切協作。',
+    'about.exp.1.period': '2025 — 2026',
+    'about.exp.1.role': 'UI/UX 設計師',
+    'about.exp.1.company': '穎宸貿易有限公司',
+    'about.exp.1.desc': '主導 Web3 產品的 UI/UX 設計與開發，負責 Cryptoldyou 與 Eggpop 兩個主要產品的介面設計與資訊架構，從零打造符合區塊鏈專案特性的視覺系統與操作流程。同時負責 NFT 數位資產設計，產出兼具收藏價值與品牌識別的視覺作品。運用 Wix 平台快速建置響應式網站，並支援社群媒體素材設計與遊戲美術製作（角色、場景、道具）',
 
-    'about.exp.2.period': '2022 — 2024',
+    'about.exp.2.period': '2023 — 2025',
     'about.exp.2.role': 'UI/UX 設計師',
-    'about.exp.2.company': 'Creative Agency',
-    'about.exp.2.desc': '為超過 15 個品牌提供完整的數位產品設計服務，專案涵蓋電商、金融、醫療等多元領域。專案多次入選國內設計獎項。',
+    'about.exp.2.company': '金融科技新創公司',
+    'about.exp.2.desc': '作為團隊核心的設計整合者，主導從 UX 規劃、UI 視覺設計、遊戲美術到行銷內容製作的端對端流程。建立 Design System 統一跨產品線（區塊鏈、投資、遊戲）設計規範，將後續專案開發時間縮短 30%、前期溝通成本降低 50%。獨立負責遊戲美術（角色、場景、UI、Live2D 動畫），為公司節省超過 40 萬元委外費用',
 
-    'about.exp.3.period': '2021 — 2022',
-    'about.exp.3.role': '初階產品設計師',
-    'about.exp.3.company': 'Startup Hub',
-    'about.exp.3.desc': '參與新創團隊的 MVP 設計，負責使用者研究、原型設計與視覺執行。學習如何在資源有限的情況下做出最佳設計決策。',
+    'about.exp.3.period': '2022 — 2023',
+    'about.exp.3.role': '專案設計師',
+    'about.exp.3.company': '政治公關專案團隊',
+    'about.exp.3.desc': '於政治公關專案中擔任跨部門設計與溝通要職，服務對象橫跨總部、地方分部與多位公共事務候選人。在高壓的選戰期間整合視覺設計、影像製作與專案管理：建立 11 位候選人的整體視覺識別系統、節省超過 20 萬元設計成本；主導活動紀錄與形象短片製作，每支影片節省約 5 萬元委外費用；協同策劃數十場 10 至 300 人規模的地方活動',
 
-    'about.exp.4.period': '2020 — 2021',
-    'about.exp.4.role': '視覺傳達設計學士',
-    'about.exp.4.company': '國立 OO 大學',
-    'about.exp.4.desc': '主修視覺傳達設計，副修認知心理學。畢業專題以「無障礙設計」為主題，獲得系上最佳作品獎。',
+    'about.exp.4.period': '2018 — 現在',
+    'about.exp.4.role': '品牌設計師 / 創辦人',
+    'about.exp.4.company': '自營工作室（個人品牌）',
+    'about.exp.4.desc': '長期經營個人品牌設計工作室超過 7 年（與正職並行），整合設計、插畫、攝影與影片剪輯服務。涵蓋 LOGO 設計、UI/UX、書籍排版、宣傳物製作、日系/Q版/卡牌插畫繪製、漫畫敘事、活動紀錄攝影與紀錄片剪輯。定期參與動漫展與同人展，自組品牌攤位並策劃整體視覺與商品銷售流程',
+
+    'about.exp.5.period': '2018',
+    'about.exp.5.role': '平面設計師',
+    'about.exp.5.company': '仁寶電腦工業股份有限公司',
+    'about.exp.5.desc': '建立印前檢查流程，將大型活動輸出物的印製錯誤率降至趨近於零；運用 3D 建模進行展場攤位配置與視覺提案；設計並優化多項內部系統與專案網站介面 (UI)；獨立負責產品與行銷贈品包裝設計，主導從結構展開圖到量產的完整流程；統籌企業活動全系列平面設計物',
 
     // 作品清單區
     'about.works.eyebrow': '作品清單',
     'about.works.title': 'Selected <em>Works</em>',
-    'about.works.tagline': '橫跨插畫、設計、攝影三個領域的代表性作品。',
+    'about.works.tagline': '橫跨插畫、設計、攝影三個領域的代表性作品',
 
     'about.works.illustration': 'ILLUSTRATION',
     'about.works.design': 'DESIGN',
@@ -141,11 +146,72 @@ const translations = {
     'about.cta.text': '想了解更多<em>合作可能</em>嗎？',
     'about.cta.btn': '聯繫我',
 
+    // 社群連結區（在關於我頁）
+    'about.social.eyebrow': '社群連結',
+    'about.social.title': '在<em>各個平台</em>找到我',
+    'about.social.tagline': '歡迎在以下平台追蹤我的最新作品與設計分享',
+
+    // 聯繫方式頁
+    'contact.hero.eyebrow': '聯繫方式',
+    'contact.hero.title1': '一起創造',
+    'contact.hero.title2': '<em>下個故事</em>',
+    'contact.hero.tagline': '無論是商業合作、專案邀約或單純交流，都歡迎透過下方表單與我聯繫',
+
+    // 表單
+    'contact.form.title': '寫封訊息給我',
+    'contact.form.subtitle': '我會盡快回覆您',
+    'contact.form.name': '姓名',
+    'contact.form.email': 'Email',
+    'contact.form.subject': '主題',
+    'contact.form.message': '訊息內容',
+    'contact.form.subject.placeholder': '例：品牌設計合作',
+    'contact.form.submit': '送出訊息',
+    'contact.form.sending': '送出中...',
+    'contact.form.success': '訊息已送出！我會盡快回覆您',
+    'contact.form.error': '送出失敗，請稍後再試或直接寄信給我',
+    'contact.form.required': '此欄位為必填',
+    'contact.form.invalid.email': '請輸入有效的 Email',
+    'contact.form.demo': '表單暫為示意模式，請改以 Email 聯繫',
+
+    // 聯絡資訊
+    'contact.info.title': '其他<em>聯絡方式</em>',
+    'contact.info.email.label': 'Email',
+    'contact.info.email.value': 'tp6vul3vm06@gmail.com',
+    'contact.info.phone.label': '電話',
+    'contact.info.phone.value': '請透過 Email 聯繫',
+    'contact.info.location.label': '工作地點',
+    'contact.info.location.value': '台北，台灣',
+    'contact.info.hours.label': '工作時間',
+    'contact.info.hours.value': '每日 12:00 — 20:00',
+
+    // 服務項目
+    'contact.services.eyebrow': '提供服務',
+    'contact.services.title': '我能<em>幫您做什麼</em>',
+    'contact.services.tagline': '根據您的需求量身打造完整解決方案',
+
+    'contact.service.1.title': 'UI/UX 設計',
+    'contact.service.1.desc': '從使用者研究、流程設計到高保真原型，打造直覺易用的數位產品',
+
+    'contact.service.2.title': '品牌識別系統',
+    'contact.service.2.desc': 'LOGO、視覺規範、應用素材的完整建置，建立有靈魂的品牌視覺語言',
+
+    'contact.service.3.title': '活動設計',
+    'contact.service.3.desc': '從活動規劃、主視覺設計、延伸物件到供應商發包執行的全流程整合服務',
+
+    'contact.service.4.title': '攝影與影片',
+    'contact.service.4.desc': '人像、商品、活動紀錄與影片剪輯，擅長捕捉真實情感與故事感',
+
+    'contact.service.5.title': '插畫委託',
+    'contact.service.5.desc': '商業插畫、書籍封面、原創角色、漫畫敘事與私人客製委託',
+
+    'contact.service.6.title': '網站設計開發',
+    'contact.service.6.desc': '從 UI 設計、Wix/HTML 建置到上線部署的完整網站開發流程',
+
     // 設計頁面
     'portfolio.hero.eyebrow': '設計作品',
     'portfolio.hero.title1': '橫跨多元領域的',
     'portfolio.hero.title2': '<em>設計</em>實踐',
-    'portfolio.hero.tagline': '從品牌識別、活動主視覺到 UI/UX，每個專案都是一次與客戶共同成長的旅程。',
+    'portfolio.hero.tagline': '從品牌識別、活動主視覺到 UI/UX，每個專案都是一次與客戶共同成長的旅程',
 
     'portfolio.filter.all': '全部',
     'portfolio.filter.branding': '品牌設計',
@@ -162,33 +228,87 @@ const translations = {
     'portfolio.cta.text': '對某個<em>專案</em>感興趣嗎？',
     'portfolio.cta.btn': '聊聊合作',
 
+    // 作品詳情頁
+    'work.back': '返回作品集',
+    'work.client': '客戶',
+    'work.year': '年份',
+    'work.role': '角色',
+    'work.tools': '工具',
+    'work.overview': '專案概述',
+    'work.next.label': '下個作品',
+
+    // 攝影頁面
+    'photo.hero.eyebrow': '攝影作品',
+    'photo.hero.title1': '用鏡頭凝結',
+    'photo.hero.title2': '<em>每個瞬間</em>',
+    'photo.hero.tagline': '從活動紀實到人像、商品與影片，每張照片都是時間的切片',
+
+    'photo.filter.all': '全部',
+    'photo.filter.event': '活動攝影',
+    'photo.filter.portrait': '人像攝影',
+    'photo.filter.product': '商品攝影',
+    'photo.filter.video': '影片',
+
+    'photo.work.1.title': '板橋群英扶輪社授證',
+    'photo.work.1.desc': '扶輪社年度授證典禮的完整紀錄',
+    'photo.work.2.title': '情侶人像攝影',
+    'photo.work.2.desc': '捕捉情侶間最真實的互動瞬間',
+    'photo.work.3.title': '商品形象攝影',
+    'photo.work.3.desc': '為品牌商品打造視覺一致的形象照',
+    'photo.work.4.title': '午宴動態攝影',
+    'photo.work.4.desc': '商務午宴的精彩瞬間與氛圍',
+
+    'photo.cta.text': '需要<em>攝影服務</em>嗎？',
+    'photo.cta.btn': '委託拍攝',
+
+    // 插畫頁面
+    'illust.hero.eyebrow': '插畫作品',
+    'illust.hero.title1': '用畫筆',
+    'illust.hero.title2': '<em>說一個故事</em>',
+    'illust.hero.tagline': '從商業委託、原創世界觀到私人客製，每幅作品都是獨特的視覺語言',
+
+    'illust.filter.all': '全部',
+    'illust.filter.commercial': '商業委託',
+    'illust.filter.original': '原創插畫',
+    'illust.filter.private': '私人委託',
+
+    'illust.work.1.title': '《魅影之戀》封面',
+    'illust.work.1.desc': '為小說量身打造的封面插畫',
+    'illust.work.2.title': '《Aphur》獨立遊戲',
+    'illust.work.2.desc': '原創遊戲世界觀與角色設計',
+    'illust.work.3.title': '私人委託作品集',
+    'illust.work.3.desc': '客製化角色與紀念肖像',
+
+    'illust.cta.text': '想要<em>客製插畫</em>嗎？',
+    'illust.cta.btn': '委託繪製',
+
     // 設計作品名稱
     'portfolio.work.1.title': 'EGGPOP NFT',
-    'portfolio.work.1.desc': 'NFT 設計與插畫整合，建立完整視覺系統。',
+    'portfolio.work.1.desc': 'NFT 設計與插畫整合，建立完整視覺系統',
 
     'portfolio.work.2.title': '108 年淡水南瓜節',
-    'portfolio.work.2.desc': '造景設計、繪製與製作，打造節慶主視覺。',
+    'portfolio.work.2.desc': '造景設計、繪製與製作，打造節慶主視覺',
 
     'portfolio.work.3.title': 'Cryptoldyou Website',
-    'portfolio.work.3.desc': '完整的 UIUX 設計與網站建置流程。',
+    'portfolio.work.3.desc': '完整的 UIUX 設計與網站建置流程',
 
     'portfolio.work.4.title': '民眾診聊所 LOGO',
-    'portfolio.work.4.desc': 'LOGO 與影音相關延伸設計。',
+    'portfolio.work.4.desc': 'LOGO 與影音相關延伸設計',
 
     'portfolio.work.5.title': '眾青雲集造浪營',
-    'portfolio.work.5.desc': '主視覺與系列活動延伸物設計。',
+    'portfolio.work.5.desc': '主視覺與系列活動延伸物設計',
 
     'portfolio.work.6.title': 'EGGPOP Website',
-    'portfolio.work.6.desc': 'Website 與 Search Web UIUX 設計建置。',
+    'portfolio.work.6.desc': 'Website 與 Search Web UIUX 設計建置',
 
     'portfolio.work.7.title': '海波兒童劇團',
-    'portfolio.work.7.desc': 'LOGO 與 CIS 完整設計。',
+    'portfolio.work.7.desc': 'LOGO 與 CIS 完整設計',
 
     'portfolio.work.8.title': '新生國小 60 周年',
-    'portfolio.work.8.desc': '校慶主視覺與延伸物設計提案。',
+    'portfolio.work.8.desc': '校慶主視覺與延伸物設計提案',
 
     'portfolio.work.9.title': '中華民國童軍露營',
-    'portfolio.work.9.desc': 'LOGO、延伸物與設計提案。',
+    'portfolio.work.9.desc': 'LOGO、延伸物與設計提案',
   },
   'en': {
     'nav.home': 'Home',
@@ -199,16 +319,16 @@ const translations = {
     'nav.contact': 'Contact',
 
     'hero.eyebrow': 'UI / UX Designer',
-    'hero.title1': 'Design that',
-    'hero.title2': 'drives <em>innovation</em>',
-    'hero.tagline': 'Crafting memorable digital experiences through the balance of user experience and visual aesthetics.',
+    'hero.title1': 'Designing with',
+    'hero.title2': '<em>emotion at heart</em>',
+    'hero.tagline': 'Crafting designs that pause people in their tracks<br>at the intersection of logic, emotion, and aesthetics',
     'hero.cta': 'Explore Work',
     'hero.scroll': 'Scroll Down',
 
     'about.eyebrow': 'About the Designer',
-    'about.title': 'I am <em>Designer Name</em>, and I believe great design changes the world',
-    'about.p1': 'With over five years of experience in UI/UX design, specializing in brand identity, digital product design, and visual storytelling.',
-    'about.p2': 'My design philosophy is to make the complex simple, and the ordinary extraordinary.',
+    'about.title': 'I am <em>Naomi</em>, designing to make people pause',
+    'about.p1': 'A multi-disciplinary designer with experience in UI/UX, brand identity, illustration narrative, and game art.',
+    'about.p2': 'My design philosophy: using systematic thinking to balance business logic and user emotion.',
     'about.cta': 'Know Me More',
 
     'works.eyebrow': 'Selected Works',
@@ -226,26 +346,26 @@ const translations = {
     'contact.text': 'Whether for business collaboration, project inquiry, or simply to connect, feel free to reach out through the button below.',
     'contact.cta': 'Contact Me',
 
-    'footer.brand': 'Designer Name',
-    'footer.tagline': 'UI/UX Designer and visual creator, focused on building memorable digital experiences.',
+    'footer.brand': 'Naomi',
+    'footer.tagline': 'A designer who weaves emotion through design. Multi-disciplinary creator across UI/UX, branding, illustration, photography, and game art.',
     'footer.col1.title': 'Navigation',
     'footer.col2.title': 'Contact',
-    'footer.copyright': '© 2026 Designer Name. All rights reserved.',
+    'footer.copyright': '© 2026 Naomi. All rights reserved.',
     'footer.location': 'Made in Taipei',
 
     // About page
     'about.hero.eyebrow': 'About Me',
-    'about.hero.title1': 'Designer Name',
-    'about.hero.title2': 'A creator driven by',
-    'about.hero.title3': '<em>curiosity</em> and design',
-    'about.hero.tagline': 'I believe design is more than visual presentation — it\'s a bridge that solves problems, conveys emotions, and creates connections.',
+    'about.hero.title1': 'Naomi',
+    'about.hero.title2': 'A designer who weaves',
+    'about.hero.title3': '<em>emotion</em> through design',
+    'about.hero.tagline': 'Design is more than visual presentation<br>it bridges problems, emotions, and connections',
 
     'about.story.eyebrow': 'My Story',
-    'about.story.title': 'A journey from <em>illustration</em> to digital design',
-    'about.story.p1': 'Passionate about art since childhood, I started with hand-drawn illustrations and gradually moved into graphic design and brand identity. During my visual communication studies in university, I became fascinated with how users interact with products.',
-    'about.story.p2': 'After graduation, I joined a tech startup and officially entered the UI/UX field. I learned how to combine aesthetics with functionality, and how to use design to solve real problems. Over five years, I\'ve worked on more than 30 projects spanning startup branding, SaaS interfaces, and enterprise digital transformation.',
-    'about.story.p3': 'Outside of work, I capture travel moments through photography and express my inner world through illustration. These creative pursuits aren\'t just hobbies — they\'re the source that nourishes my design inspiration.',
-    'about.story.quote': '"Good design is invisible — it lets users focus on their goals, not on the design itself."',
+    'about.story.title': 'Telling stories between <em>logic and emotion</em>',
+    'about.story.p1': 'For me, design has never been just a visual problem — it\'s the delicate art of making strangers understand in the first second and be moved in the second. From UI/UX to game art to illustration narrative, I love exploring the same question through different forms: why do people pause at certain images?',
+    'about.story.p2': 'Over the past few years, I\'ve built digital products, brand identities, game content, and commercial collaborations from zero to one. These experiences taught me: good design requires both the rigor of design systems and sensitivity to emotion — neither can be missing.',
+    'about.story.p3': 'I believe the best design is when users are moved by story and emotion without noticing the technology behind it. That\'s what I want to convey every time I pick up a pen or open Figma.',
+    'about.story.quote': '"The true power of design lies not in being seen, but in being felt."',
     'about.story.caption': 'TAIPEI · 2026',
 
     // Professional expertise
@@ -298,25 +418,30 @@ const translations = {
     'about.exp.eyebrow': 'Experience',
     'about.exp.title': 'Every <em>step</em> I\'ve taken',
 
-    'about.exp.1.period': '2024 — Present',
-    'about.exp.1.role': 'Senior UI/UX Designer',
-    'about.exp.1.company': 'Tech Studio Inc.',
-    'about.exp.1.desc': 'Leading the SaaS product design team, building a comprehensive design system that improved user conversion by 35%. Driving cross-functional design strategy with engineering and product teams.',
+    'about.exp.1.period': '2025 — 2026',
+    'about.exp.1.role': 'UI/UX Designer',
+    'about.exp.1.company': 'Visionary Harvest Trading Co., Ltd.',
+    'about.exp.1.desc': 'Led UI/UX design and development for Web3 products. Designed interfaces and information architecture for Cryptoldyou and Eggpop, building visual systems and user flows tailored for blockchain projects. Designed NFT digital assets that combine collectible value with brand identity. Built responsive websites on Wix, supported social media marketing visuals and 2D game art (characters, scenes, props).',
 
-    'about.exp.2.period': '2022 — 2024',
+    'about.exp.2.period': '2023 — 2025',
     'about.exp.2.role': 'UI/UX Designer',
-    'about.exp.2.company': 'Creative Agency',
-    'about.exp.2.desc': 'Delivered comprehensive digital product design services for over 15 brands across e-commerce, finance, and healthcare sectors. Multiple projects shortlisted for national design awards.',
+    'about.exp.2.company': 'FinTech Startup',
+    'about.exp.2.desc': 'Served as the team\'s core design integrator, leading end-to-end processes from UX planning, UI/visual design, game art, to marketing content production. Established Design System unifying standards across product lines (blockchain, investment, games), reducing development time by ~30% and front-end communication costs by 50%. Independently handled all game art (characters, scenes, UI, Live2D animations), saving over NT$400,000 in outsourcing costs.',
 
-    'about.exp.3.period': '2021 — 2022',
-    'about.exp.3.role': 'Junior Product Designer',
-    'about.exp.3.company': 'Startup Hub',
-    'about.exp.3.desc': 'Contributed to MVP design for startup teams, handling user research, prototyping, and visual execution. Learned to make optimal design decisions under resource constraints.',
+    'about.exp.3.period': '2022 — 2023',
+    'about.exp.3.role': 'Project Designer',
+    'about.exp.3.company': 'Political Public Affairs Team',
+    'about.exp.3.desc': 'Cross-departmental design and communication lead for political public affairs projects, working with headquarters, regional offices, and multiple public affairs candidates. During campaign periods: built visual identity systems for 11 candidates (saved over NT$200,000); led event documentation and image-building short films (saved ~NT$50,000 per video); co-planned dozens of local events ranging from 10 to 300 attendees.',
 
-    'about.exp.4.period': '2020 — 2021',
-    'about.exp.4.role': 'BFA in Visual Communication Design',
-    'about.exp.4.company': 'National OO University',
-    'about.exp.4.desc': 'Major in visual communication design with minor in cognitive psychology. Graduation project on accessibility design received the department\'s best work award.',
+    'about.exp.4.period': '2018 — Present',
+    'about.exp.4.role': 'Brand Designer / Founder',
+    'about.exp.4.company': 'Independent Studio (Personal Brand)',
+    'about.exp.4.desc': 'Operated an independent design studio for over 7 years (alongside full-time roles), offering integrated design, illustration, photography, and video editing services. Includes LOGO design, UI/UX, book layout, promotional materials, Japanese/chibi/card illustration, comic narrative, event photography, and documentary editing. Regular participant in anime and dōjin events with self-organized booths.',
+
+    'about.exp.5.period': '2018',
+    'about.exp.5.role': 'Graphic Designer',
+    'about.exp.5.company': 'Compal Electronics, Inc.',
+    'about.exp.5.desc': 'Established pre-press inspection workflows reducing print error rates to near zero. Used 3D modeling for booth layout and visual proposals at exhibitions. Designed and optimized internal systems and project website UIs. Independently handled product and promotional packaging design from structural drafting to mass production. Coordinated full-series corporate event graphics.',
 
     // Works list
     'about.works.eyebrow': 'Works List',
@@ -329,6 +454,67 @@ const translations = {
 
     'about.cta.text': 'Want to explore <em>collaboration possibilities</em>?',
     'about.cta.btn': 'Contact Me',
+
+    // Social section (on about page)
+    'about.social.eyebrow': 'Social Links',
+    'about.social.title': 'Find me on <em>various platforms</em>',
+    'about.social.tagline': 'Follow me on these platforms for the latest works and design insights.',
+
+    // Contact page
+    'contact.hero.eyebrow': 'Contact',
+    'contact.hero.title1': "Let's create",
+    'contact.hero.title2': '<em>the next story</em>',
+    'contact.hero.tagline': 'Whether for business collaboration, project inquiry, or simply to connect, feel free to reach out through the form below.',
+
+    // Form
+    'contact.form.title': 'Send me a message',
+    'contact.form.subtitle': "I'll get back to you as soon as possible.",
+    'contact.form.name': 'Name',
+    'contact.form.email': 'Email',
+    'contact.form.subject': 'Subject',
+    'contact.form.message': 'Message',
+    'contact.form.subject.placeholder': 'e.g., Brand Design Collaboration',
+    'contact.form.submit': 'Send Message',
+    'contact.form.sending': 'Sending...',
+    'contact.form.success': 'Message sent! I will reply soon.',
+    'contact.form.error': 'Failed to send. Please try again or email me directly.',
+    'contact.form.required': 'This field is required',
+    'contact.form.invalid.email': 'Please enter a valid email',
+    'contact.form.demo': 'Form is in demo mode — please reach out via Email',
+
+    // Contact info
+    'contact.info.title': 'Other <em>ways to reach me</em>',
+    'contact.info.email.label': 'Email',
+    'contact.info.email.value': 'tp6vul3vm06@gmail.com',
+    'contact.info.phone.label': 'Phone',
+    'contact.info.phone.value': 'Please contact via Email',
+    'contact.info.location.label': 'Location',
+    'contact.info.location.value': 'Taipei, Taiwan',
+    'contact.info.hours.label': 'Working Hours',
+    'contact.info.hours.value': 'Daily  12:00 — 20:00',
+
+    // Services
+    'contact.services.eyebrow': 'Services',
+    'contact.services.title': 'How <em>I can help you</em>',
+    'contact.services.tagline': 'Tailored solutions based on your needs.',
+
+    'contact.service.1.title': 'UI/UX Design',
+    'contact.service.1.desc': 'From user research and flow design to high-fidelity prototypes, building intuitive digital products.',
+
+    'contact.service.2.title': 'Brand Identity',
+    'contact.service.2.desc': 'LOGO, visual guidelines, and application assets — building soulful brand visual languages.',
+
+    'contact.service.3.title': 'Event Design',
+    'contact.service.3.desc': 'End-to-end event design — from planning, key visuals, collateral, to supplier coordination and execution.',
+
+    'contact.service.4.title': 'Photography & Video',
+    'contact.service.4.desc': 'Portrait, product, event documentation, and video editing — specializing in genuine emotion and storytelling.',
+
+    'contact.service.5.title': 'Illustration',
+    'contact.service.5.desc': 'Commercial illustration, book covers, original characters, comic narratives, and private commissions.',
+
+    'contact.service.6.title': 'Web Design & Development',
+    'contact.service.6.desc': 'Complete website development from UI design, Wix/HTML implementation, to deployment.',
 
     // Portfolio page
     'portfolio.hero.eyebrow': 'Design Works',
@@ -350,6 +536,60 @@ const translations = {
 
     'portfolio.cta.text': 'Interested in a <em>project</em>?',
     'portfolio.cta.btn': "Let's Talk",
+
+    // Work detail page
+    'work.back': 'Back to Portfolio',
+    'work.client': 'Client',
+    'work.year': 'Year',
+    'work.role': 'Role',
+    'work.tools': 'Tools',
+    'work.overview': 'Overview',
+    'work.next.label': 'Next Project',
+
+    // Photography page
+    'photo.hero.eyebrow': 'Photography',
+    'photo.hero.title1': 'Freezing',
+    'photo.hero.title2': '<em>every moment</em>',
+    'photo.hero.tagline': 'From event documentary to portrait, product, and video — every photo is a slice of time.',
+
+    'photo.filter.all': 'All',
+    'photo.filter.event': 'Event',
+    'photo.filter.portrait': 'Portrait',
+    'photo.filter.product': 'Product',
+    'photo.filter.video': 'Video',
+
+    'photo.work.1.title': 'Banqiao Rotary Charter',
+    'photo.work.1.desc': 'Complete documentation of the Rotary Club annual charter ceremony.',
+    'photo.work.2.title': 'Couple Portrait',
+    'photo.work.2.desc': 'Capturing the most genuine moments between couples.',
+    'photo.work.3.title': 'Product Branding',
+    'photo.work.3.desc': 'Creating consistent visual imagery for brand products.',
+    'photo.work.4.title': 'Luncheon Motion',
+    'photo.work.4.desc': 'Highlights and atmosphere of a business luncheon.',
+
+    'photo.cta.text': 'Need <em>photography services</em>?',
+    'photo.cta.btn': 'Commission a Shoot',
+
+    // Illustration page
+    'illust.hero.eyebrow': 'Illustration',
+    'illust.hero.title1': 'Telling stories',
+    'illust.hero.title2': '<em>through brushstrokes</em>',
+    'illust.hero.tagline': 'From commercial commissions to original worldviews to private customization — every work is a unique visual language.',
+
+    'illust.filter.all': 'All',
+    'illust.filter.commercial': 'Commercial',
+    'illust.filter.original': 'Original',
+    'illust.filter.private': 'Private',
+
+    'illust.work.1.title': '"Phantom Love" Cover',
+    'illust.work.1.desc': 'Custom cover illustration for a novel.',
+    'illust.work.2.title': '"Aphur" Indie Game',
+    'illust.work.2.desc': 'Original game worldview and character design.',
+    'illust.work.3.title': 'Private Commissions',
+    'illust.work.3.desc': 'Custom characters and memorial portraits.',
+
+    'illust.cta.text': 'Want a <em>custom illustration</em>?',
+    'illust.cta.btn': 'Commission Art',
 
     // Design work names
     'portfolio.work.1.title': 'EGGPOP NFT',
@@ -386,12 +626,13 @@ class CustomCursor {
   constructor() {
     this.dot = document.querySelector('.cursor-dot');
     this.ring = document.querySelector('.cursor-ring');
-    this.mouseX = 0;
-    this.mouseY = 0;
-    this.dotX = 0;
-    this.dotY = 0;
-    this.ringX = 0;
-    this.ringY = 0;
+    // 初始位置設為螢幕中央，避免初始在左上角看不到
+    this.mouseX = window.innerWidth / 2;
+    this.mouseY = window.innerHeight / 2;
+    this.dotX = this.mouseX;
+    this.dotY = this.mouseY;
+    this.ringX = this.mouseX;
+    this.ringY = this.mouseY;
 
     // 偵測觸控裝置
     this.isTouchDevice = window.matchMedia('(hover: none), (pointer: coarse)').matches;
@@ -406,8 +647,9 @@ class CustomCursor {
       this.mouseY = e.clientY;
     });
 
-    // 滑入連結時放大
-    document.querySelectorAll('a, button, .work-card, .magnetic').forEach(el => {
+    // 滑入連結時放大（涵蓋所有可互動元素）
+    const interactiveSelector = 'a, button, .work-card, .magnetic, .skill-card, .filter-btn, input, textarea, .lang-switch button';
+    document.querySelectorAll(interactiveSelector).forEach(el => {
       el.addEventListener('mouseenter', () => {
         this.dot.classList.add('hover');
         this.ring.classList.add('hover');

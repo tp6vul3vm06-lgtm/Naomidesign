@@ -19,14 +19,10 @@
 </head>
 <body>
 
-  <!-- 自訂游標 -->
   <div class="cursor-dot"></div>
   <div class="cursor-ring"></div>
-
-  <!-- 滾動進度條 -->
   <div class="scroll-progress"></div>
 
-  <!-- 導覽列 -->
   <nav class="navbar">
     <a href="index.html" class="nav-logo">
       Designer<span class="accent">.</span>
@@ -78,164 +74,213 @@
     </div>
   </section>
 
-  <!-- ============ 2. 篩選器（Sticky）============ -->
+  <!-- ============ 2. 篩選器 ============ -->
   <section class="filter-section">
     <div class="container">
       <div class="filter-bar">
         <div class="filter-buttons">
-          <button class="filter-btn active" data-filter="all" data-i18n="portfolio.filter.all">全部</button>
-          <button class="filter-btn" data-filter="branding" data-i18n="portfolio.filter.branding">品牌設計</button>
-          <button class="filter-btn" data-filter="event" data-i18n="portfolio.filter.event">活動設計</button>
-          <button class="filter-btn" data-filter="uiux" data-i18n="portfolio.filter.uiux">UI / UX</button>
+          <button class="filter-btn active" data-filter="all">全部</button>
+          <button class="filter-btn" data-filter="uiux">UIUX</button>
+          <button class="filter-btn" data-filter="branding">品牌設計</button>
+          <button class="filter-btn" data-filter="event">活動設計</button>
+          <button class="filter-btn" data-filter="graphic">平面設計</button>
         </div>
 
         <div class="filter-count">
           <span data-i18n="portfolio.count.label">展示作品</span>
-          <span class="count-num">09</span>
+          <span class="count-num">12</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ============ 3. 不對稱作品網格 ============ -->
+  <!-- ============ 3. 工整三欄作品網格 ============ -->
   <section class="works-grid-section">
     <div class="container">
       <div class="works-grid">
 
-        <!-- 作品 1：EGGPOP NFT (UI/UX) - 大尺寸 -->
-        <a href="#" class="work-card size-large" data-category="uiux">
-          <div class="work-card-image" style="background-image: url('https://picsum.photos/seed/portfolio1/1200/800');"></div>
+        <!-- UIUX 1: EggPOP Website（外部連結）-->
+        <a href="https://contact54098.wixstudio.com/eggpop2025" target="_blank" class="work-card" data-category="uiux">
+          <div class="work-card-image" style="background-image: url('images/eggpop-cover.png');"></div>
           <div class="work-card-overlay"></div>
           <span class="work-card-number">01</span>
           <div class="work-card-content">
             <div class="work-card-meta">
-              <span class="work-card-category" data-i18n="portfolio.filter.uiux">UI / UX</span>
+              <span class="work-card-category">UIUX</span>
               <span class="work-card-year">2024</span>
             </div>
-            <h3 class="work-card-title" data-i18n="portfolio.work.1.title">EGGPOP NFT</h3>
-            <p class="work-card-description" data-i18n="portfolio.work.1.desc">NFT 設計與插畫整合，建立完整視覺系統。</p>
+            <h3 class="work-card-title">EggPOP Website</h3>
+            <p class="work-card-description">EggPOP Website UIUX 設計與建置</p>
           </div>
         </a>
 
-        <!-- 作品 2：淡水南瓜節 (Event) - 高尺寸 -->
-        <a href="#" class="work-card size-tall" data-category="event">
-          <div class="work-card-image" style="background-image: url('https://picsum.photos/seed/portfolio2/600/900');"></div>
+        <!-- UIUX 2: Cryptoldyou（點不進去，不連結）-->
+        <div class="work-card" data-category="uiux" style="cursor:default;">
+          <div class="work-card-image" style="background-image: url('images/cryptoldyou-cover.png');"></div>
           <div class="work-card-overlay"></div>
           <span class="work-card-number">02</span>
           <div class="work-card-content">
             <div class="work-card-meta">
-              <span class="work-card-category" data-i18n="portfolio.filter.event">EVENT</span>
-              <span class="work-card-year">2019</span>
+              <span class="work-card-category">UIUX</span>
+              <span class="work-card-year">2024</span>
             </div>
-            <h3 class="work-card-title" data-i18n="portfolio.work.2.title">108 年淡水南瓜節</h3>
-            <p class="work-card-description" data-i18n="portfolio.work.2.desc">造景設計、繪製與製作，打造節慶主視覺。</p>
+            <h3 class="work-card-title">Cryptoldyou</h3>
+            <p class="work-card-description">Cryptoldyou Website UIUX 設計與建置</p>
           </div>
-        </a>
+        </div>
 
-        <!-- 作品 3：Cryptoldyou Website (UI/UX) - 中尺寸 -->
-        <a href="#" class="work-card size-medium" data-category="uiux">
-          <div class="work-card-image" style="background-image: url('https://picsum.photos/seed/portfolio3/900/900');"></div>
+        <!-- UIUX 3: 民眾黨 APP Redesign -->
+        <a href="work-detail.html?id=tpp-app-redesign" class="work-card" data-category="uiux">
+          <div class="work-card-image" style="background-image: url('images/tpp-01.jpg');"></div>
           <div class="work-card-overlay"></div>
           <span class="work-card-number">03</span>
           <div class="work-card-content">
             <div class="work-card-meta">
-              <span class="work-card-category" data-i18n="portfolio.filter.uiux">UI / UX</span>
-              <span class="work-card-year">2024</span>
+              <span class="work-card-category">UIUX</span>
+              <span class="work-card-year">2022</span>
             </div>
-            <h3 class="work-card-title" data-i18n="portfolio.work.3.title">Cryptoldyou Website</h3>
-            <p class="work-card-description" data-i18n="portfolio.work.3.desc">完整的 UIUX 設計與網站建置流程。</p>
+            <h3 class="work-card-title">民眾黨 APP Redesign</h3>
+            <p class="work-card-description">民眾黨黨員應用程式重新設計</p>
           </div>
         </a>
 
-        <!-- 作品 4：民眾診聊所 LOGO (Branding) - 小尺寸 -->
-        <a href="#" class="work-card size-small" data-category="branding">
-          <div class="work-card-image" style="background-image: url('https://picsum.photos/seed/portfolio4/600/400');"></div>
+        <!-- 品牌設計 1: 吟清酌 -->
+        <a href="work-detail.html?id=yinqing" class="work-card" data-category="branding">
+          <div class="work-card-image" style="background-image: url('images/yq-01.jpg');"></div>
           <div class="work-card-overlay"></div>
           <span class="work-card-number">04</span>
           <div class="work-card-content">
             <div class="work-card-meta">
-              <span class="work-card-category" data-i18n="portfolio.filter.branding">BRANDING</span>
+              <span class="work-card-category">品牌設計</span>
               <span class="work-card-year">2023</span>
             </div>
-            <h3 class="work-card-title" data-i18n="portfolio.work.4.title">民眾診聊所 LOGO</h3>
+            <h3 class="work-card-title">吟清酌</h3>
+            <p class="work-card-description">日本清酒品牌 VI 品牌設計</p>
           </div>
         </a>
 
-        <!-- 作品 5：眾青雲集造浪營 (Event) - 小尺寸 -->
-        <a href="#" class="work-card size-small" data-category="event">
-          <div class="work-card-image" style="background-image: url('https://picsum.photos/seed/portfolio5/600/400');"></div>
+        <!-- 品牌設計 2: 先智 KenJa -->
+        <a href="work-detail.html?id=kenja" class="work-card" data-category="branding">
+          <div class="work-card-image" style="background-image: url('images/kj-01.jpg');"></div>
           <div class="work-card-overlay"></div>
           <span class="work-card-number">05</span>
           <div class="work-card-content">
             <div class="work-card-meta">
-              <span class="work-card-category" data-i18n="portfolio.filter.event">EVENT</span>
+              <span class="work-card-category">品牌設計</span>
               <span class="work-card-year">2023</span>
             </div>
-            <h3 class="work-card-title" data-i18n="portfolio.work.5.title">眾青雲集造浪營</h3>
+            <h3 class="work-card-title">先智 KenJa</h3>
+            <p class="work-card-description">WEB3 區塊鏈礦機品牌設計</p>
           </div>
         </a>
 
-        <!-- 作品 6：EGGPOP Website (UI/UX) - 寬尺寸 -->
-        <a href="#" class="work-card size-wide" data-category="uiux">
-          <div class="work-card-image" style="background-image: url('https://picsum.photos/seed/portfolio6/1200/600');"></div>
+        <!-- 品牌設計 3: 童心。同心 -->
+        <a href="work-detail.html?id=childscout" class="work-card" data-category="branding">
+          <div class="work-card-image" style="background-image: url('images/cs-01.jpg');"></div>
           <div class="work-card-overlay"></div>
           <span class="work-card-number">06</span>
           <div class="work-card-content">
             <div class="work-card-meta">
-              <span class="work-card-category" data-i18n="portfolio.filter.uiux">UI / UX</span>
+              <span class="work-card-category">品牌設計</span>
               <span class="work-card-year">2024</span>
             </div>
-            <h3 class="work-card-title" data-i18n="portfolio.work.6.title">EGGPOP Website</h3>
-            <p class="work-card-description" data-i18n="portfolio.work.6.desc">Website 與 Search Web UIUX 設計建置。</p>
+            <h3 class="work-card-title">童心．同心</h3>
+            <p class="work-card-description">中華民國童軍第 12 次全國大露營主視覺</p>
           </div>
         </a>
 
-        <!-- 作品 7：海波兒童劇團 (Branding) - 中尺寸 -->
-        <a href="#" class="work-card size-medium" data-category="branding">
-          <div class="work-card-image" style="background-image: url('https://picsum.photos/seed/portfolio7/900/900');"></div>
+        <!-- 品牌設計 4: SWAP -->
+        <a href="work-detail.html?id=swap" class="work-card" data-category="branding">
+          <div class="work-card-image" style="background-image: url('images/swap_01-01.jpg');"></div>
           <div class="work-card-overlay"></div>
           <span class="work-card-number">07</span>
           <div class="work-card-content">
             <div class="work-card-meta">
-              <span class="work-card-category" data-i18n="portfolio.filter.branding">BRANDING</span>
-              <span class="work-card-year">2022</span>
+              <span class="work-card-category">品牌設計</span>
+              <span class="work-card-year">2024</span>
             </div>
-            <h3 class="work-card-title" data-i18n="portfolio.work.7.title">海波兒童劇團</h3>
-            <p class="work-card-description" data-i18n="portfolio.work.7.desc">LOGO 與 CIS 完整設計。</p>
+            <h3 class="work-card-title">SWAP</h3>
+            <p class="work-card-description">區塊鏈金融品牌 LOGO 設計</p>
           </div>
         </a>
 
-        <!-- 作品 8：新生國小 60 周年 (Event) - 高尺寸 -->
-        <a href="#" class="work-card size-tall" data-category="event">
-          <div class="work-card-image" style="background-image: url('https://picsum.photos/seed/portfolio8/600/900');"></div>
+        <!-- 品牌設計 5: DeFi -->
+        <a href="work-detail.html?id=defi" class="work-card" data-category="branding">
+          <div class="work-card-image" style="background-image: url('images/defi-01.jpg');"></div>
           <div class="work-card-overlay"></div>
           <span class="work-card-number">08</span>
           <div class="work-card-content">
             <div class="work-card-meta">
-              <span class="work-card-category" data-i18n="portfolio.filter.event">EVENT</span>
-              <span class="work-card-year">2023</span>
+              <span class="work-card-category">品牌設計</span>
+              <span class="work-card-year">2024</span>
             </div>
-            <h3 class="work-card-title" data-i18n="portfolio.work.8.title">新生國小 60 周年</h3>
-            <p class="work-card-description" data-i18n="portfolio.work.8.desc">校慶主視覺與延伸物設計提案。</p>
+            <h3 class="work-card-title">DeFi</h3>
+            <p class="work-card-description">DeFi 金融產品 LOGO 設計</p>
           </div>
         </a>
 
-        <!-- 作品 9：中華民國童軍露營 (Branding) - 大尺寸 -->
-        <a href="#" class="work-card size-large" data-category="branding">
-          <div class="work-card-image" style="background-image: url('https://picsum.photos/seed/portfolio9/1200/800');"></div>
+        <!-- 活動設計 1: 眾青雲集造浪營 -->
+        <a href="work-detail.html?id=zhongqing" class="work-card" data-category="event">
+          <div class="work-card-image" style="background-image: url('images/zq-01.jpg');"></div>
           <div class="work-card-overlay"></div>
           <span class="work-card-number">09</span>
           <div class="work-card-content">
             <div class="work-card-meta">
-              <span class="work-card-category" data-i18n="portfolio.filter.branding">BRANDING</span>
-              <span class="work-card-year">2024</span>
+              <span class="work-card-category">活動設計</span>
+              <span class="work-card-year">2023</span>
             </div>
-            <h3 class="work-card-title" data-i18n="portfolio.work.9.title">中華民國童軍露營</h3>
-            <p class="work-card-description" data-i18n="portfolio.work.9.desc">LOGO、延伸物與設計提案。</p>
+            <h3 class="work-card-title">眾青雲集造浪營</h3>
+            <p class="work-card-description">民眾黨青年委員會青年營隊規劃設計</p>
           </div>
         </a>
 
-        <!-- 空狀態（篩選後無作品時顯示）-->
+        <!-- 平面設計 1: LOGO Collection -->
+        <a href="work-detail.html?id=logo-collection" class="work-card" data-category="graphic">
+          <div class="work-card-image" style="background-image: url('images/lc-01.jpg');"></div>
+          <div class="work-card-overlay"></div>
+          <span class="work-card-number">10</span>
+          <div class="work-card-content">
+            <div class="work-card-meta">
+              <span class="work-card-category">平面設計</span>
+              <span class="work-card-year">2023 — 2024</span>
+            </div>
+            <h3 class="work-card-title">LOGO Collection</h3>
+            <p class="work-card-description">多元 LOGO 設計作品合集</p>
+          </div>
+        </a>
+
+        <!-- 平面設計 2: 縣市議員選舉文宣設計 -->
+        <a href="work-detail.html?id=election" class="work-card" data-category="graphic">
+          <div class="work-card-image" style="background-image: url('images/el-03.jpg');"></div>
+          <div class="work-card-overlay"></div>
+          <span class="work-card-number">11</span>
+          <div class="work-card-content">
+            <div class="work-card-meta">
+              <span class="work-card-category">平面設計</span>
+              <span class="work-card-year">2022 — 2023</span>
+            </div>
+            <h3 class="work-card-title">縣市議員選舉文宣設計</h3>
+            <p class="work-card-description">新北市議員候選人選舉設計物</p>
+          </div>
+        </a>
+
+
+
+        <!-- 品牌設計: 新生國小60周年校慶 -->
+        <a href="work-detail.html?id=xinsheng" class="work-card" data-category="branding">
+          <div class="work-card-image" style="background-image: url('images/xs-01.jpg');"></div>
+          <div class="work-card-overlay"></div>
+          <span class="work-card-number">13</span>
+          <div class="work-card-content">
+            <div class="work-card-meta">
+              <span class="work-card-category">品牌設計</span>
+              <span class="work-card-year">2023</span>
+            </div>
+            <h3 class="work-card-title">新生國小60周年校慶</h3>
+            <p class="work-card-description">校慶主視覺與延伸物設計提案</p>
+          </div>
+        </a>
+
         <div class="empty-state">
           <div class="empty-state-icon">∅</div>
           <p class="empty-state-text" data-i18n="portfolio.empty">此分類暫無作品</p>
@@ -281,10 +326,10 @@
         <div class="footer-col">
           <h4 data-i18n="footer.col2.title">聯絡</h4>
           <ul>
-            <li><a href="mailto:hello@example.com">hello@example.com</a></li>
+            <li><a href="mailto:tp6vul3vm06@gmail.com">tp6vul3vm06@gmail.com</a></li>
             <li><a href="#" target="_blank">Instagram</a></li>
             <li><a href="#" target="_blank">Behance</a></li>
-            <li><a href="#" target="_blank">LinkedIn</a></li>
+            <li><a href="https://www.linkedin.com/in/%E7%AD%B1%E7%92%87-%E9%99%B3-86a71436a/" target="_blank">LinkedIn</a></li>
           </ul>
         </div>
       </div>
@@ -297,6 +342,7 @@
   </footer>
 
   <script src="https://unpkg.com/lenis@1.3.21/dist/lenis.min.js"></script>
+  <script src="js/particles.js"></script>
   <script src="js/common.js"></script>
   <script src="js/portfolio.js"></script>
 </body>

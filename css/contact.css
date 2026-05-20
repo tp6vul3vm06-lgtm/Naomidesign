@@ -1,0 +1,491 @@
+/* ============================================
+   聯繫方式頁 (contact.html) 專屬樣式
+   ============================================ */
+
+/* === 頁首大標題區 === */
+.contact-hero {
+  position: relative;
+  min-height: 50vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 8rem 0 3rem;
+  overflow: hidden;
+}
+
+.contact-hero-bg {
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 30% 50%, rgba(0, 212, 163, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 70% 50%, rgba(0, 212, 163, 0.04) 0%, transparent 50%);
+  z-index: 0;
+}
+
+.contact-hero-content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+.contact-hero-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: 2rem;
+  font-weight: 500;
+  opacity: 0;
+  animation: fadeInUp 1.4s var(--ease-out-expo) 0.3s forwards;
+}
+
+.contact-hero-eyebrow::before {
+  content: '';
+  width: 30px;
+  height: 1px;
+  background: var(--color-accent);
+}
+
+.contact-hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 7vw, 5.5rem);
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  margin-bottom: 2rem;
+}
+
+.contact-hero-title em {
+  font-style: italic;
+  color: var(--color-accent);
+}
+
+.contact-hero-title .title-wrapper {
+  overflow: hidden;
+  display: block;
+  padding: 0.1em 0;
+}
+
+.contact-hero-title .title-line {
+  display: inline-block;
+  transform: translateY(105%);
+  animation: slideUp 1.6s var(--ease-out-expo) forwards;
+}
+
+.contact-hero-title .title-line-1 { animation-delay: 0.5s; }
+.contact-hero-title .title-line-2 { animation-delay: 0.65s; }
+
+.contact-hero-tagline {
+  font-size: 1.1rem;
+  color: var(--color-text-muted);
+  max-width: 600px;
+  line-height: 1.8;
+  opacity: 0;
+  animation: fadeInUp 1.4s var(--ease-out-expo) 1.4s forwards;
+}
+
+/* === 表單 + 聯絡資訊 並排佈局 === */
+.contact-main-section {
+  padding: var(--space-lg) 0 var(--space-xl);
+}
+
+.contact-main-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: var(--space-lg);
+  align-items: start;
+}
+
+/* === 表單區 === */
+.contact-form-section .form-header {
+  margin-bottom: 2.5rem;
+}
+
+.form-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.75rem;
+}
+
+.form-subtitle {
+  font-size: 1rem;
+  color: var(--color-text-muted);
+  line-height: 1.7;
+}
+
+/* 表單樣式 */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+/* 浮動標籤輸入框 */
+.form-field {
+  position: relative;
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 1.25rem 0 0.75rem;
+  font-size: 1rem;
+  font-family: inherit;
+  color: var(--color-text);
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--color-border);
+  border-radius: 0;
+  outline: none;
+  transition: border-color 0.5s var(--ease-out-expo);
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 120px;
+  line-height: 1.6;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  border-bottom-color: var(--color-accent);
+}
+
+/* 浮動標籤 */
+.form-label {
+  position: absolute;
+  top: 1.25rem;
+  left: 0;
+  font-size: 1rem;
+  color: var(--color-text-muted);
+  pointer-events: none;
+  transition: top 0.4s var(--ease-out-expo),
+              font-size 0.4s var(--ease-out-expo),
+              color 0.4s var(--ease-out-expo),
+              letter-spacing 0.4s var(--ease-out-expo);
+}
+
+/* 當輸入框有值或 focus 時，標籤上移縮小 */
+.form-input:focus ~ .form-label,
+.form-input:not(:placeholder-shown) ~ .form-label,
+.form-textarea:focus ~ .form-label,
+.form-textarea:not(:placeholder-shown) ~ .form-label {
+  top: 0;
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  font-weight: 500;
+}
+
+/* 錯誤狀態 */
+.form-field.error .form-input,
+.form-field.error .form-textarea {
+  border-bottom-color: #ef5b5b;
+}
+
+.form-error {
+  display: none;
+  font-size: 0.75rem;
+  color: #ef5b5b;
+  margin-top: 0.5rem;
+  letter-spacing: 0.05em;
+}
+
+.form-field.error .form-error {
+  display: block;
+}
+
+/* 送出按鈕 — 預設為示意停用狀態（反灰）*/
+.form-submit {
+  margin-top: 1rem;
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1.1rem 2.5rem;
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 999px;
+  border: 1px solid var(--color-border);
+  cursor: not-allowed;
+  position: relative;
+  overflow: hidden;
+  transition: background 0.5s var(--ease-out-expo),
+              color 0.5s var(--ease-out-expo);
+  font-family: inherit;
+}
+
+.form-submit::before {
+  display: none;  /* 示意狀態無 hover 動畫 */
+}
+
+.form-submit:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.form-submit .arrow {
+  opacity: 0.5;
+}
+
+/* 「示意模式」提示徽章 */
+.form-submit-note {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-text-subtle);
+}
+
+.form-submit-note::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  background: var(--color-text-subtle);
+  border-radius: 50%;
+}
+
+.form-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* === 送出成功狀態 === */
+.form-success {
+  display: none;
+  padding: 2.5rem;
+  background: rgba(0, 212, 163, 0.08);
+  border: 1px solid var(--color-accent);
+  text-align: center;
+}
+
+.form-success.visible {
+  display: block;
+  animation: successFadeIn 0.8s var(--ease-out-expo);
+}
+
+@keyframes successFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.form-success-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  color: var(--color-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.25rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  animation: successPop 0.6s var(--ease-out-expo);
+}
+
+@keyframes successPop {
+  0% { transform: scale(0); }
+  60% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+.form-success-text {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+/* === 聯絡資訊側邊欄 === */
+.contact-info-section {
+  padding: 2rem;
+  background: var(--color-bg-elevated);
+  border: 1px solid var(--color-border);
+  position: sticky;
+  top: 120px;
+}
+
+.contact-info-title {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  margin-bottom: 2rem;
+}
+
+.contact-info-title em {
+  font-style: italic;
+  color: var(--color-accent);
+}
+
+.contact-info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.contact-info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.contact-info-label {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--color-text-subtle);
+  font-weight: 500;
+}
+
+.contact-info-value {
+  font-size: 1.05rem;
+  color: var(--color-text);
+  line-height: 1.5;
+  transition: color 0.5s var(--ease-out-expo);
+}
+
+a.contact-info-value:hover {
+  color: var(--color-accent);
+}
+
+/* === 服務項目區 === */
+.services-section {
+  padding: var(--space-xl) 0;
+  border-top: 1px solid var(--color-border);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: var(--space-lg);
+}
+
+.service-card {
+  position: relative;
+  padding: 2.5rem 2rem;
+  background: var(--color-bg-elevated);
+  border: 1px solid var(--color-border);
+  overflow: hidden;
+  transition: border-color 0.6s var(--ease-out-expo),
+              transform 0.6s var(--ease-out-expo);
+  cursor: none;
+}
+
+.service-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at top right,
+    rgba(0, 212, 163, 0.1) 0%,
+    transparent 60%
+  );
+  opacity: 0;
+  transition: opacity 0.6s var(--ease-out-expo);
+  pointer-events: none;
+}
+
+.service-card:hover {
+  border-color: var(--color-accent);
+  transform: translateY(-4px);
+}
+
+.service-card:hover::before {
+  opacity: 1;
+}
+
+.service-number {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.25em;
+  color: var(--color-accent);
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.service-title {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+.service-desc {
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  line-height: 1.7;
+}
+
+/* === 響應式 === */
+@media (max-width: 1024px) {
+  .contact-main-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+  }
+
+  .contact-info-section {
+    position: static;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-hero {
+    min-height: auto;
+    padding: 7rem 0 2rem;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .contact-info-section {
+    padding: 1.5rem;
+  }
+
+  .service-card {
+    padding: 2rem 1.5rem;
+  }
+}

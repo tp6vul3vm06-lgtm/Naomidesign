@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>聯繫方式 — Designer Name</title>
+  <meta name="description" content="與設計師 Designer Name 聯繫，討論您的設計合作需求。">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Noto+Serif+TC:wght@400;500;600;700&family=Noto+Sans+TC:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.21/dist/lenis.css">
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+  <div class="scroll-progress"></div>
+
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">
+      Designer<span class="accent">.</span>
+    </a>
+
+    <button class="menu-toggle" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="index.html" data-i18n="nav.home">首頁</a></li>
+        <li><a href="about.html" data-i18n="nav.about">關於我</a></li>
+        <li><a href="portfolio.html" data-i18n="nav.portfolio">設計</a></li>
+        <li><a href="photography.html" data-i18n="nav.photography">攝影</a></li>
+        <li><a href="illustration.html" data-i18n="nav.illustration">插畫</a></li>
+        <li><a href="contact.html" data-i18n="nav.contact">聯繫方式</a></li>
+      </ul>
+
+      <div class="lang-switch">
+        <button data-lang="zh-TW" class="active">中</button>
+        <button data-lang="en">EN</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============ 1. 頁首 ============ -->
+  <section class="contact-hero">
+    <div class="contact-hero-bg"></div>
+    <div class="container">
+      <div class="contact-hero-content">
+        <p class="contact-hero-eyebrow" data-i18n="contact.hero.eyebrow">聯繫方式</p>
+
+        <h1 class="contact-hero-title">
+          <span class="title-wrapper">
+            <span class="title-line title-line-1" data-i18n="contact.hero.title1">一起創造</span>
+          </span>
+          <span class="title-wrapper">
+            <span class="title-line title-line-2" data-i18n="contact.hero.title2"><em>下個故事</em></span>
+          </span>
+        </h1>
+
+        <p class="contact-hero-tagline" data-i18n="contact.hero.tagline">
+          無論是商業合作、專案邀約或單純交流，都歡迎透過下方表單與我聯繫。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 2. 主區：表單 + 聯絡資訊 ============ -->
+  <section class="contact-main-section">
+    <div class="container">
+      <div class="contact-main-grid">
+
+        <!-- 左側：聯絡表單 -->
+        <div class="contact-form-section reveal">
+          <div class="form-header">
+            <h2 class="form-title" data-i18n="contact.form.title">寫封訊息給我</h2>
+            <p class="form-subtitle" data-i18n="contact.form.subtitle">我會盡快回覆您。</p>
+          </div>
+
+          <form class="contact-form" novalidate>
+            <div class="form-row">
+              <div class="form-field">
+                <input type="text" name="name" id="form-name" class="form-input" placeholder=" " required>
+                <label for="form-name" class="form-label" data-i18n="contact.form.name">姓名</label>
+                <span class="form-error"></span>
+              </div>
+
+              <div class="form-field">
+                <input type="email" name="email" id="form-email" class="form-input" placeholder=" " required>
+                <label for="form-email" class="form-label" data-i18n="contact.form.email">Email</label>
+                <span class="form-error"></span>
+              </div>
+            </div>
+
+            <div class="form-field">
+              <input type="text" name="subject" id="form-subject" class="form-input" placeholder=" " required>
+              <label for="form-subject" class="form-label" data-i18n="contact.form.subject">主題</label>
+              <span class="form-error"></span>
+            </div>
+
+            <div class="form-field">
+              <textarea name="message" id="form-message" class="form-textarea" placeholder=" " rows="5" required></textarea>
+              <label for="form-message" class="form-label" data-i18n="contact.form.message">訊息內容</label>
+              <span class="form-error"></span>
+            </div>
+
+            <div style="display: flex; align-items: center; flex-wrap: wrap;">
+              <button type="submit" class="form-submit" disabled>
+                <span data-i18n="contact.form.submit">送出訊息</span>
+                <span class="arrow">→</span>
+              </button>
+              <span class="form-submit-note" data-i18n="contact.form.demo">表單暫為示意模式，請改以 Email 聯繫</span>
+            </div>
+          </form>
+
+          <!-- 送出成功狀態 -->
+          <div class="form-success">
+            <div class="form-success-icon">✓</div>
+            <p class="form-success-text" data-i18n="contact.form.success">訊息已送出！我會盡快回覆您。</p>
+          </div>
+        </div>
+
+        <!-- 右側：聯絡資訊側邊欄 -->
+        <aside class="contact-info-section reveal">
+          <h3 class="contact-info-title" data-i18n="contact.info.title">其他<em>聯絡方式</em></h3>
+
+          <div class="contact-info-list">
+            <div class="contact-info-item">
+              <span class="contact-info-label" data-i18n="contact.info.email.label">Email</span>
+              <a href="mailto:tp6vul3vm06@gmail.com" class="contact-info-value" data-i18n="contact.info.email.value">tp6vul3vm06@gmail.com</a>
+            </div>
+
+            <div class="contact-info-item">
+              <span class="contact-info-label" data-i18n="contact.info.phone.label">電話</span>
+              <a href="tel:+886912345678" class="contact-info-value" data-i18n="contact.info.phone.value">+886 912 345 678</a>
+            </div>
+
+            <div class="contact-info-item">
+              <span class="contact-info-label" data-i18n="contact.info.location.label">工作地點</span>
+              <span class="contact-info-value" data-i18n="contact.info.location.value">台北，台灣</span>
+            </div>
+
+            <div class="contact-info-item">
+              <span class="contact-info-label" data-i18n="contact.info.hours.label">工作時間</span>
+              <span class="contact-info-value" data-i18n="contact.info.hours.value">週一至週五 10:00 — 19:00</span>
+            </div>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 3. 服務項目區 ============ -->
+  <section class="services-section">
+    <div class="container">
+      <div class="section-header reveal" style="flex-direction: column; align-items: flex-start;">
+        <span class="section-eyebrow" data-i18n="contact.services.eyebrow">提供服務</span>
+        <h2 class="section-title" data-i18n="contact.services.title">我能<em>幫您做什麼</em></h2>
+        <p style="font-size: 1rem; color: var(--color-text-muted); max-width: 600px; margin-top: 1rem;" data-i18n="contact.services.tagline">
+          根據您的需求量身打造完整解決方案。
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="service-number">01</div>
+          <h3 class="service-title" data-i18n="contact.service.1.title">UI/UX 設計</h3>
+          <p class="service-desc" data-i18n="contact.service.1.desc">從研究、流程設計到高保真原型，打造直覺易用的數位產品。</p>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-number">02</div>
+          <h3 class="service-title" data-i18n="contact.service.2.title">品牌識別系統</h3>
+          <p class="service-desc" data-i18n="contact.service.2.desc">LOGO、視覺規範、應用素材，建立完整的品牌視覺語言。</p>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-number">03</div>
+          <h3 class="service-title" data-i18n="contact.service.3.title">活動主視覺</h3>
+          <p class="service-desc" data-i18n="contact.service.3.desc">從主視覺到延伸物，打造令人記憶深刻的活動體驗。</p>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-number">04</div>
+          <h3 class="service-title" data-i18n="contact.service.4.title">攝影與影片</h3>
+          <p class="service-desc" data-i18n="contact.service.4.desc">人像、商品、活動紀錄與影片剪輯。</p>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-number">05</div>
+          <h3 class="service-title" data-i18n="contact.service.5.title">插畫委託</h3>
+          <p class="service-desc" data-i18n="contact.service.5.desc">商業插畫、書籍封面、原創角色與私人客製。</p>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-number">06</div>
+          <h3 class="service-title" data-i18n="contact.service.6.title">網站設計開發</h3>
+          <p class="service-desc" data-i18n="contact.service.6.desc">從設計到建置的完整網站開發流程。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 頁尾 -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h3 data-i18n="footer.brand">設計師姓名</h3>
+          <p data-i18n="footer.tagline">UI/UX 設計師、視覺創作者，專注於打造令人記憶深刻的數位體驗。</p>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-i18n="footer.col1.title">導覽</h4>
+          <ul>
+            <li><a href="index.html" data-i18n="nav.home">首頁</a></li>
+            <li><a href="about.html" data-i18n="nav.about">關於我</a></li>
+            <li><a href="portfolio.html" data-i18n="nav.portfolio">設計</a></li>
+            <li><a href="photography.html" data-i18n="nav.photography">攝影</a></li>
+            <li><a href="illustration.html" data-i18n="nav.illustration">插畫</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-i18n="footer.col2.title">聯絡</h4>
+          <ul>
+            <li><a href="mailto:tp6vul3vm06@gmail.com">tp6vul3vm06@gmail.com</a></li>
+            <li><a href="#" target="_blank">Instagram</a></li>
+            <li><a href="#" target="_blank">Behance</a></li>
+            <li><a href="https://www.linkedin.com/in/%E7%AD%B1%E7%92%87-%E9%99%B3-86a71436a/" target="_blank">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span data-i18n="footer.copyright">© 2026 設計師姓名. 版權所有。</span>
+        <span data-i18n="footer.location">Made in Taipei</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/lenis@1.3.21/dist/lenis.min.js"></script>
+  <script src="js/particles.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>

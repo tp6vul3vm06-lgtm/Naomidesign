@@ -83,7 +83,7 @@
 .about-hero-tagline {
   font-size: 1.15rem;
   color: var(--color-text-muted);
-  max-width: 600px;
+  max-width: 700px;
   line-height: 1.8;
   opacity: 0;
   animation: fadeInUp 1.4s var(--ease-out-expo) 1.4s forwards;
@@ -93,6 +93,124 @@
 .story-section {
   padding: var(--space-xl) 0;
   position: relative;
+}
+
+/* === 社群連結區（位於個人故事與專業能力之間）=== */
+.social-section {
+  padding: var(--space-lg) 0 var(--space-xl);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.social-section-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 3rem;
+}
+
+.social-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+}
+
+.social-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 1.5rem;
+  background: var(--color-bg-elevated);
+  border: 1px solid var(--color-border);
+  overflow: hidden;
+  transition: border-color 0.6s var(--ease-out-expo),
+              transform 0.6s var(--ease-out-expo);
+  cursor: none;
+}
+
+.social-item::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 212, 163, 0.08) 0%,
+    transparent 60%
+  );
+  opacity: 0;
+  transition: opacity 0.6s var(--ease-out-expo);
+  pointer-events: none;
+}
+
+.social-item:hover {
+  border-color: var(--color-accent);
+  transform: translateY(-3px);
+}
+
+.social-item:hover::before {
+  opacity: 1;
+}
+
+.social-icon {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text);
+  transition: color 0.6s var(--ease-out-expo),
+              transform 0.6s var(--ease-out-expo);
+}
+
+.social-item:hover .social-icon {
+  color: var(--color-accent);
+  transform: scale(1.1);
+}
+
+.social-icon svg {
+  width: 100%;
+  height: 100%;
+  fill: currentColor;
+}
+
+.social-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.social-name {
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-text-subtle);
+  margin-bottom: 0.3rem;
+  font-weight: 500;
+}
+
+.social-handle {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  color: var(--color-text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.social-arrow {
+  color: var(--color-text-subtle);
+  font-size: 1rem;
+  transition: color 0.6s var(--ease-out-expo),
+              transform 0.6s var(--ease-out-expo);
+  flex-shrink: 0;
+}
+
+.social-item:hover .social-arrow {
+  color: var(--color-accent);
+  transform: translate(3px, -3px);
 }
 
 .story-grid {
@@ -107,6 +225,8 @@
   top: 120px;
   aspect-ratio: 4 / 5;
   overflow: hidden;
+  max-width: 360px;           /* 縮小：原來無限制，現在限制最大寬度 */
+  margin-left: auto;          /* 靠右對齊 */
 }
 
 .story-image {
@@ -779,6 +899,144 @@
   border-top: 1px solid var(--color-border);
 }
 
+/* ============================================
+   社群連結區（連到我）
+   ============================================ */
+
+.connect-section {
+  padding: var(--space-xl) 0;
+  position: relative;
+  border-top: 1px solid var(--color-border);
+}
+
+.connect-header {
+  text-align: center;
+  margin-bottom: var(--space-lg);
+}
+
+.connect-eyebrow {
+  display: inline-block;
+  font-size: 0.75rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.connect-title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  max-width: 700px;
+  margin: 0 auto 1rem;
+}
+
+.connect-title em {
+  font-style: italic;
+  color: var(--color-accent);
+}
+
+.connect-tagline {
+  font-size: 1rem;
+  color: var(--color-text-muted);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.connect-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.connect-link {
+  position: relative;
+  padding: 2rem 1.5rem;
+  background: var(--color-bg-soft);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  overflow: hidden;
+  transition: border-color 0.6s var(--ease-out-expo),
+              transform 0.6s var(--ease-out-expo);
+}
+
+.connect-link:hover {
+  border-color: var(--color-accent);
+  transform: translateY(-4px);
+}
+
+.connect-link::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) scaleX(0);
+  width: 80%;
+  height: 1px;
+  background: var(--color-accent);
+  transition: transform 0.6s var(--ease-out-expo);
+  transform-origin: center;
+}
+
+.connect-link:hover::before {
+  transform: translateX(-50%) scaleX(1);
+}
+
+.connect-icon {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-muted);
+  transition: color 0.6s var(--ease-out-expo),
+              transform 0.6s var(--ease-out-expo);
+}
+
+.connect-link:hover .connect-icon {
+  color: var(--color-accent);
+  transform: scale(1.1);
+}
+
+.connect-icon svg {
+  width: 100%;
+  height: 100%;
+  fill: currentColor;
+}
+
+.connect-platform {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--color-text-subtle);
+  font-weight: 500;
+}
+
+.connect-handle {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  color: var(--color-text);
+  transition: color 0.6s var(--ease-out-expo);
+}
+
+.connect-link:hover .connect-handle {
+  color: var(--color-accent);
+}
+
 .about-cta-text {
   font-family: var(--font-display);
   font-size: clamp(2rem, 4vw, 3rem);
@@ -806,6 +1064,15 @@
   .story-grid {
     grid-template-columns: 1fr;
     gap: var(--space-md);
+  }
+
+  .social-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .social-item {
+    padding: 1.2rem;
   }
 
   .story-image-wrapper {
@@ -853,10 +1120,20 @@
   .works-list-header {
     gap: 1rem;
   }
+
+  /* 連結區手機版 2 欄 */
+  .connect-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
 }
 
 @media (max-width: 540px) {
   .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .social-grid {
     grid-template-columns: 1fr;
   }
 

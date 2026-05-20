@@ -5,8 +5,10 @@
   width: 100%;
   overflow: hidden;
   display: flex;
+  flex-direction: column;      /* 改為直排，讓內容與 scroll-indicator 分開 */
   align-items: center;
   justify-content: center;
+  padding-bottom: 100px;       /* 預留 scroll-indicator 的空間，不重疊 */
 }
 
 .hero-bg {
@@ -161,10 +163,11 @@
   margin-top: 2rem;
   font-size: 1.05rem;
   color: var(--color-text-muted);
-  max-width: 600px;
+  max-width: 700px;
   margin-left: auto;
   margin-right: auto;
   line-height: 1.7;
+  text-align: center;  /* 首頁置中 */
   opacity: 0;
   animation: fadeInUp 1.4s var(--ease-out-expo) 1.6s forwards;
 }
@@ -219,7 +222,7 @@
 
 /* 滾動提示 */
 .scroll-indicator {
-  position: absolute;
+  position: absolute;          /* 絕對定位釘在 hero 底部 */
   bottom: 2.5rem;
   left: 50%;
   transform: translateX(-50%);
@@ -234,6 +237,8 @@
   color: var(--color-text-subtle);
   opacity: 0;
   animation: fadeInUp 1.4s var(--ease-out-expo) 2s forwards;
+  pointer-events: none;        /* 不阻擋點擊 */
+  white-space: nowrap;
 }
 
 .scroll-line {
@@ -335,6 +340,9 @@
   aspect-ratio: 4 / 5;
   overflow: hidden;
   background: var(--color-bg-soft);
+  max-height: 480px;          /* 限制高度，與右側文字對齊 */
+  max-width: 380px;           /* 對應的寬度 */
+  margin-left: auto;          /* 靠右對齊（圖片在左欄） */
 }
 
 .about-image img {
@@ -415,8 +423,6 @@
   transition: transform 0.6s var(--ease-out-expo);
   will-change: transform;
 }
-
-.work-card:nth-child(1) { grid-column: span 2; aspect-ratio: 21 / 9; }
 
 .work-card-image {
   position: absolute;
@@ -589,6 +595,14 @@
     padding: var(--space-lg) 0;
   }
 
+  .hero {
+    padding-bottom: 80px;      /* 手機版稍微少一點 */
+  }
+
+  .scroll-indicator {
+    bottom: 1.5rem;            /* 手機版往上移一點 */
+  }
+
   .section-header {
     flex-direction: column;
     align-items: flex-start;
@@ -596,11 +610,6 @@
 
   .works-grid {
     grid-template-columns: 1fr;
-  }
-
-  .work-card:nth-child(1) {
-    grid-column: span 1;
-    aspect-ratio: 4 / 3;
   }
 
   .about-preview {

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>作品詳情 — Designer Name</title>
+  <meta name="description" content="設計作品詳細介紹">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Noto+Serif+TC:wght@400;500;600;700&family=Noto+Sans+TC:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.21/dist/lenis.css">
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/work-detail.css">
+</head>
+<body>
+
+  <!-- 自訂游標 -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <!-- 滾動進度條 -->
+  <div class="scroll-progress"></div>
+
+  <!-- 導覽列 -->
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">
+      Designer<span class="accent">.</span>
+    </a>
+
+    <button class="menu-toggle" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="index.html" data-i18n="nav.home">首頁</a></li>
+        <li><a href="about.html" data-i18n="nav.about">關於我</a></li>
+        <li><a href="portfolio.html" data-i18n="nav.portfolio">設計</a></li>
+        <li><a href="photography.html" data-i18n="nav.photography">攝影</a></li>
+        <li><a href="illustration.html" data-i18n="nav.illustration">插畫</a></li>
+        <li><a href="contact.html" data-i18n="nav.contact">聯繫方式</a></li>
+      </ul>
+
+      <div class="lang-switch">
+        <button data-lang="zh-TW" class="active">中</button>
+        <button data-lang="en">EN</button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ============ 1. 頁首 ============ -->
+    <section class="work-hero">
+      <div class="work-hero-content">
+        <a href="portfolio.html" class="work-back-link">
+          <span class="arrow">←</span>
+          <span data-i18n="work.back">返回作品集</span>
+        </a>
+
+        <p class="work-hero-eyebrow">
+          <span class="work-hero-eyebrow-text">分類</span>
+        </p>
+
+        <h1 class="work-hero-title">
+          <span class="line">
+            <span class="work-hero-title-text">作品標題</span>
+          </span>
+        </h1>
+
+        <p class="work-hero-tagline">
+          作品簡介
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ 2. 主視覺大圖 ============ -->
+    <section class="work-feature-image">
+      <div class="work-feature-image-inner">
+        <img src="" alt="">
+      </div>
+    </section>
+
+    <!-- ============ 3. 專案資訊（四欄）============ -->
+    <section class="work-info-section">
+      <div class="work-info-grid">
+        <div class="work-info-item">
+          <span class="work-info-label" data-i18n="work.client">客戶</span>
+          <span class="work-info-value work-info-client">—</span>
+        </div>
+
+        <div class="work-info-item">
+          <span class="work-info-label" data-i18n="work.year">年份</span>
+          <span class="work-info-value work-info-year">—</span>
+        </div>
+
+        <div class="work-info-item">
+          <span class="work-info-label" data-i18n="work.role">角色</span>
+          <span class="work-info-value work-info-role">—</span>
+        </div>
+
+        <div class="work-info-item">
+          <span class="work-info-label" data-i18n="work.tools">工具</span>
+          <span class="work-info-value work-info-tools">—</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 4. 專案敘述 ============ -->
+    <section class="work-description">
+      <div class="work-description-grid">
+        <div class="work-description-label" data-i18n="work.overview">專案概述</div>
+        <div class="work-description-content">
+          <h3>—</h3>
+          <div class="work-description-paragraphs"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 5. 圖片區（動態渲染）============ -->
+    <section class="work-gallery">
+      <div class="work-gallery-inner">
+        <!-- 圖片由 work-detail.js 動態渲染 -->
+      </div>
+    </section>
+
+    <!-- ============ 6. 下個作品 ============ -->
+    <section class="work-next">
+      <div class="work-next-bg"></div>
+      <div class="work-next-content">
+        <span class="work-next-eyebrow" data-i18n="work.next.label">下個作品</span>
+        <a href="#" class="work-next-link">
+          <h2 class="work-next-title">—</h2>
+          <p class="work-next-meta">—</p>
+          <div class="work-next-arrow">→</div>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 頁尾 -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h3 data-i18n="footer.brand">設計師姓名</h3>
+          <p data-i18n="footer.tagline">UI/UX 設計師、視覺創作者，專注於打造令人記憶深刻的數位體驗。</p>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-i18n="footer.col1.title">導覽</h4>
+          <ul>
+            <li><a href="index.html" data-i18n="nav.home">首頁</a></li>
+            <li><a href="about.html" data-i18n="nav.about">關於我</a></li>
+            <li><a href="portfolio.html" data-i18n="nav.portfolio">設計</a></li>
+            <li><a href="photography.html" data-i18n="nav.photography">攝影</a></li>
+            <li><a href="illustration.html" data-i18n="nav.illustration">插畫</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-i18n="footer.col2.title">聯絡</h4>
+          <ul>
+            <li><a href="mailto:tp6vul3vm06@gmail.com">tp6vul3vm06@gmail.com</a></li>
+            <li><a href="#" target="_blank">Instagram</a></li>
+            <li><a href="#" target="_blank">Behance</a></li>
+            <li><a href="https://www.linkedin.com/in/%E7%AD%B1%E7%92%87-%E9%99%B3-86a71436a/" target="_blank">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span data-i18n="footer.copyright">© 2026 設計師姓名. 版權所有。</span>
+        <span data-i18n="footer.location">Made in Taipei</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/lenis@1.3.21/dist/lenis.min.js"></script>
+  <script src="js/particles.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/work-detail.js"></script>
+</body>
+</html>
